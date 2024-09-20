@@ -1,0 +1,22 @@
+$sizeRows: (auto 869px);
+
+.section4 {
+  .section4_container {
+    height: 100%;
+    background-color: red;
+    border-radius: 200px 0 0 0;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: $sizeRows;
+    grid-template-areas: "section1" "section2";
+  }
+}
+.section4_child1_container {
+  grid-area: section1;
+}
+.section4_child2_container {
+  grid-area: section2;
+  background-color: rgba(0, 0, 255, 0.381);
+  width: calc(100% - 96px);
+  border-radius: 0px 200px 0px 0px;
+}

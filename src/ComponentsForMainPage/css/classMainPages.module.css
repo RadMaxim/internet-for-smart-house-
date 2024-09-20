@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 768px 1162px 1118px 1549px;
+  row-gap: 192px;
+  grid-template-areas: "section1" "section2" "section3" "section4";
+}
+
+.section1 {
+  grid-area: section1;
+}
+
+.section2 {
+  grid-area: section2;
+}
+
+.section3 {
+  grid-area: section3;
+}
+
+.section4 {
+  grid-area: section4;
+}/*# sourceMappingURL=classMainPages.module.css.map */

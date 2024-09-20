@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+$rowSize: (768px 1162px 1118px 1549px);
+$gapRow: 192px;
+
+.main {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: $rowSize;
+  row-gap: $gapRow;
+  grid-template-areas: "section1" "section2" "section3" "section4";
+}
+@for $i from 1 to 5{
+    .section#{$i}{
+        grid-area: section#{$i};
+    }
+}

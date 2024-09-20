@@ -1,0 +1,14 @@
+.section3{
+    background-color: rgba(168, 168, 253, 0.619);
+}
+$sizeColumn: (auto clamp(70%, 940px, 75%) auto);
+.section3 {
+  display: grid;
+  grid-template-columns: $sizeColumn;
+  grid-template-rows: 100%;
+  grid-template-areas: ". content .";
+  .section3_container {
+    grid-area: content;
+    background-color: rgba(174, 168, 168, 0.305);
+  }
+}

@@ -1,0 +1,14 @@
+.section2 {
+  background-color: rgba(0, 0, 255, 0.197);
+}
+
+.section2 {
+  display: grid;
+  grid-template-columns: auto clamp(70%, 940px, 75%) auto;
+  grid-template-rows: 100%;
+  grid-template-areas: ". content .";
+}
+.section2 .section2_container {
+  grid-area: content;
+  background-color: rgba(255, 0, 0, 0.305);
+}/*# sourceMappingURL=classContactsUs2.module.css.map */

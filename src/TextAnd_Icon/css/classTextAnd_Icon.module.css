@@ -1,0 +1,68 @@
+p {
+  padding: 0px !important;
+}
+
+.divL {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.divR {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divR,
+.divL,
+span {
+  cursor: pointer;
+  color: #356ead !important;
+}
+.divR svg,
+.divL svg,
+span svg {
+  fill: #356ead !important;
+}
+
+.divL,
+.divR {
+  margin-bottom: 0;
+  gap: 16px;
+}
+
+.divR:hover .rightArrow {
+  animation: 1s arrowR infinite;
+}
+
+.divL:hover .leftArrow {
+  animation: 1s arrowL infinite;
+}
+
+@keyframes arrowR {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+}
+@keyframes arrowL {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+}
+.texts {
+  color: rgb(255, 255, 255);
+  margin: 0;
+}/*# sourceMappingURL=classTextAnd_Icon.module.css.map */

@@ -1,0 +1,16 @@
+$blue_04: #5a98d0;
+.input[type="submit"] {
+  background-color: $blue_04;
+  box-shadow: 5px 10px 20px 0px #1070b133;
+  font-family: "GilroyB";
+  font-size: 1rem;
+  color: white !important;
+  outline: none;
+  transition: background-color 0.7s ease;
+  cursor: pointer;
+  border-radius: 10px;
+  &:hover {
+    $blue_04: #3497ee;
+    background-color: $blue_04;
+  }
+}

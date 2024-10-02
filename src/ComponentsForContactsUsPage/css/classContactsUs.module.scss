@@ -1,21 +1,21 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+$rowSize: (380px 800px 480px 869px);
+$gapRow: 57px;
+
+.main {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: $rowSize;
+  row-gap: $gapRow;
+  grid-template-areas: "section1" "section2" "section3" "section4";
+}
+@for $i from 1 to 5 {
+  .section#{$i} {
+    grid-area: section#{$i};
   }
-  
-  $rowSize: (380px 800px 480px 869px);
-  $gapRow: 57px;
-  
-  .main {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: $rowSize;
-    row-gap: $gapRow;
-    grid-template-areas: "section1" "section2" "section3" "section4";
-  }
- @for $i from 1 to 5{
-    .section#{$i}{
-        grid-area: section#{$i};
-    }
- }
+}

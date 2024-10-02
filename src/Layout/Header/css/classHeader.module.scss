@@ -1,5 +1,4 @@
-
-@mixin posElem(){
+@mixin posElem() {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,15 +7,13 @@ header {
   position: absolute;
   height: 48px;
   width: 100%;
-  background-color: rgba(0, 128, 0, 0.116);
   margin-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  .header_container{
+  .header_container {
     position: relative;
-    width: clamp(95%,1200px,80%);
-    background-color: red;
+    width: clamp(95%, 1200px, 80%);
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -44,7 +41,9 @@ header {
   border-radius: 2px;
   position: absolute;
   left: 0;
-  transition: transform 0.5s ease, opacity 0.5s ease;
+  transition:
+    transform 0.5s ease,
+    opacity 0.5s ease;
 }
 
 .burger_menu span:nth-child(1) {
@@ -73,7 +72,7 @@ header {
   transform: rotate(-45deg) translate(10px, -10px);
 }
 
-.menu{
+.menu {
   display: block;
   position: absolute;
   top: -40px;
@@ -84,27 +83,27 @@ header {
   transition: right 0.5s ease-in-out;
   @include posElem();
 }
-.burger_checkbox:checked ~ .menu{
+.burger_checkbox:checked ~ .menu {
   right: -5%;
 }
-.menu_container{
-width: 100%;
-height: 100%;
-@include posElem();
+.menu_container {
+  width: 100%;
+  height: 100%;
+  @include posElem();
 }
-.ul{
+.ul {
   @include posElem();
   flex-direction: column;
   list-style-type: none;
   width: 100%;
-  
+
   gap: 30px;
-  li{
+  li {
     width: 100%;
     height: 50px;
     background-color: white;
     @include posElem();
-    a{
+    a {
       text-decoration: none;
       font-size: 30px;
       font-weight: 600;
@@ -112,23 +111,41 @@ height: 100%;
       overflow: hidden;
       position: relative;
       transition: color 0.5s ease;
-      &:hover{
+      &:hover {
         color: rgba(0, 0, 255, 0.904);
       }
-      &::before{
+      &::before {
         content: "";
         width: 100%;
         height: 5%;
         position: absolute;
         bottom: 0;
-        
+
         left: 100%;
         background-color: red;
         transition: left 0.5s ease;
       }
-      &:hover::before{
+      &:hover::before {
         left: 0;
-       }
+      }
     }
+  }
+}
+.theme {
+  position: relative;
+  @include posElem();
+  input[type="checkbox"] {
+    display: none;
+    position: absolute;
+  }
+  label {
+    transition: transform 0.7s ease;
+    cursor: pointer;
+  }
+  label:nth-of-type(2) {
+    transform: translateX(-30%);
+  }
+  input[type="checkbox"]:checked ~ label {
+    transform: translateX(-100%);
   }
 }

@@ -3,6 +3,178 @@
   padding: 0;
   margin: 0;
 }
-.section1 {
-  background: rgba(0, 0, 255, 0.158);
+@mixin posEl() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+$sizeColumn: (auto clamp(70%, 940px, 75%) auto);
+.section1 {
+  background: linear-gradient(
+    0deg,
+    #98c3e8 8.84%,
+    rgba(152, 195, 232, 0) 31.12%
+  );
+
+  display: grid;
+  grid-template-columns: $sizeColumn;
+  grid-template-rows: 100%;
+  grid-template-areas: ". content .";
+  .section1_container {
+    // margin-left: 212px;
+    grid-area: content;
+    @include posEl();
+    display: grid;
+    grid-template-columns: 510px auto;
+    grid-template-rows: 100%;
+    grid-template-areas: "content imgs";
+    .left {
+      grid-area: content;
+      display: grid;
+      grid-template-columns: 100%;
+      column-gap: 32px;
+      grid-template-rows: 148px 82px 56px;
+      grid-template-areas: "h1" "p" "b";
+      div:nth-of-type(1) {
+        grid-area: h1;
+      }
+      div:nth-of-type(2) {
+        grid-area: p;
+      }
+      div:nth-of-type(3) {
+        margin-top: 39px;
+        grid-area: b;
+      }
+    }
+    .right {
+      grid-area: imgs;
+      position: relative;
+      .mainImg {
+        transform: translateX(-15%);
+      }
+      .grid_img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: -15%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 178px auto;
+        grid-template-areas: "top_imgs" "bottom_imgs";
+      }
+      .top_imgs {
+        grid-area: top_imgs;
+        display: flex;
+        justify-content: flex-end;
+        .top_imgs_container {
+          width: 261px;
+          height: 178px;
+          display: grid;
+          grid-template-columns: 41px 41px 88px 41px 41px;
+          grid-template-rows: repeat(2, 50%);
+          grid-template-areas: ". img1 . img2 ." "img3 . img4 . img5";
+          justify-content: center;
+          .helper_img {
+            grid-area: img4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          img:nth-of-type(1) {
+            grid-area: img5;
+          }
+          img:nth-of-type(2) {
+            grid-area: img3;
+          }
+          img:nth-of-type(3) {
+            grid-area: img1;
+          }
+          img:nth-of-type(4) {
+            grid-area: img2;
+          }
+        }
+      }
+      .bottom_imgs {
+        grid-area: bottom_imgs;
+        display: grid;
+        grid-template-columns: auto 274px 213px;
+        grid-template-rows: 274px;
+        align-items: flex-end;
+        grid-template-areas: "man content woman";
+        div:nth-of-type(1) {
+          grid-area: man;
+          img {
+            transform: translate(100px, 100px);
+            animation: man infinite 10s ease;
+            z-index: 10;
+          }
+        }
+        div:nth-of-type(2) {
+          grid-area: content;
+        }
+        div:nth-of-type(3) {
+          grid-area: woman;
+          img {
+            z-index: 10;
+            transform: translate(80px, -70px);
+            animation: woman infinite 10s ease;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes man {
+  0% {
+    transform: translate(100px, 100px);
+  }
+  30% {
+    transform: translate(90px, 110px);
+  }
+  60% {
+    transform: translate(90px, 80px);
+  }
+  100% {
+    transform: translate(100px, 100px);
+  }
+}
+@keyframes woman {
+  0% {
+    transform: translate(80px, -70px);
+  }
+  30% {
+    transform: translate(90px, -60px);
+  }
+  60% {
+    transform: translate(75px, -65px);
+  }
+  100% {
+    transform: translate(80px, -70px);
+  }
+}
+// $arrayImgs:((0%,0%),(0%,0%));
+// @for $i from 1 to calc(length($arrayImgs) + 1){
+//   $translateValues: nth($arrayImgs,  $i);
+//   $translateX: nth($translateValues, 1);
+//   $translateY: nth($translateValues, 2);
+//   @debug $translateX,$translateY,$translateValues;
+//   img:nth-last-of-type(#{$i}) {
+//     transform: translate($translateX, $translateY);
+//     position: relative;
+//     &::after{
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//       content: ""+#{$i};
+//       width: 20%;
+//       height: 20%;
+//       background-color: #444545;
+//       color: rgb(255, 255, 255);
+//       z-index: 10;
+//     }
+//   }
+// }
+// }
+// }

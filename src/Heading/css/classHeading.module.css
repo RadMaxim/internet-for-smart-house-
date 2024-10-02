@@ -1,0 +1,37 @@
+.white {
+  color: #ffffff;
+}
+
+.Blue_01 {
+  color: #1f3f68;
+}
+
+.blue_02 {
+  color: #316099;
+}
+
+.blue_03 {
+  color: #356ead;
+}
+
+.black {
+  color: black;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 16px !important;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: right;
+}/*# sourceMappingURL=classHeading.module.css.map */

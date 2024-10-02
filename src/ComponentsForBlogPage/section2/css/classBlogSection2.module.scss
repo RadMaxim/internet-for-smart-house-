@@ -1,7 +1,8 @@
-.section2{
-    background-color: rgba(168, 168, 253, 0.619);
+@use "./../../../AllMixin/allMixin.scss";
+
+.section2 {
 }
-$sizeColumn: (auto clamp(70%, 940px, 75%) auto);
+$sizeColumn: (auto  940px auto);
 .section2 {
   display: grid;
   grid-template-columns: $sizeColumn;
@@ -9,6 +10,34 @@ $sizeColumn: (auto clamp(70%, 940px, 75%) auto);
   grid-template-areas: ". content .";
   .section2_container {
     grid-area: content;
-    background-color: rgba(255, 0, 0, 0.305);
   }
+  .section2_container_top {
+    display: grid;
+    grid-template-rows: 96px 25px 380px;
+    grid-template-columns: auto 540px;
+    grid-template-areas:
+      "search_input search_input"
+      "title ."
+      "desc desc_img";
+  }
+  .section_1 {
+    grid-area: search_input;
+  }
+  .section_2 {
+    grid-area: title;
+  }
+  .section_3 {
+    grid-area: desc;
+    p{
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+  }
+  .section_4 {
+    grid-area: desc_img;
+  }
+}
+ul {
+  margin-top: 32px;
+  @include allMixin.posEl(20px);
 }

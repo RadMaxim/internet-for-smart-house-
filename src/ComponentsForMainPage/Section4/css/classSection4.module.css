@@ -1,15 +1,36 @@
 .section4 .section4_container {
   height: 100%;
-  background-color: red;
+  background-color: #5a98d0;
   border-radius: 200px 0 0 0;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: auto 869px;
+  grid-template-rows: 680px 869px;
   grid-template-areas: "section1" "section2";
 }
 
 .section4_child1_container {
   grid-area: section1;
+  display: grid;
+  grid-template-columns: 213px 940px auto;
+  grid-template-rows: 92px 256px;
+  grid-template-areas: ". top ." ". bottom .";
+  row-gap: 111px;
+  padding-top: 96px;
+}
+.section4_child1_container .section_top {
+  grid-area: top;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section4_child1_container .section_top div:nth-child(1) {
+  width: 323px;
+}
+.section4_child1_container .section_top div:nth-child(2) {
+  width: 540px;
+}
+.section4_child1_container .section_bottom {
+  grid-area: bottom;
 }
 
 .section4_child2_container {

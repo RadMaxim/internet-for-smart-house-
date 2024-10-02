@@ -1,0 +1,59 @@
+@use "./../../AllMixin/allMixin.scss";
+
+$blue_03: #356ead;
+$white: #ffffff;
+p {
+  padding: 0px !important;
+}
+.divL {
+  @include allMixin.posElem(flex-start);
+}
+.divR {
+  @include allMixin.posElem(flex-end);
+}
+span {
+  @include allMixin.posElem(center);
+}
+.divR,
+.divL,
+span {
+  cursor: pointer;
+  color: $blue_03 !important;
+  svg {
+    fill: $blue_03 !important;
+  }
+}
+.divL,
+.divR {
+  margin-bottom: 0;
+  gap: 16px;
+}
+.divR:hover .rightArrow {
+  animation: 1s arrowR infinite;
+}
+.divL:hover .leftArrow {
+  animation: 1s arrowL infinite;
+}
+
+@keyframes arrowR {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+}
+@keyframes arrowL {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+}
+.texts {
+  color: rgb(255, 255, 255);
+  margin: 0;
+}

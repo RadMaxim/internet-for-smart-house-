@@ -1,4 +1,10 @@
 $sizeColumn: (auto clamp(70%, 940px, 75%) auto);
+@mixin posIMG($url) {
+  background-image: url($url);
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .section3 {
   display: grid;
   grid-template-columns: $sizeColumn;
@@ -6,6 +12,46 @@ $sizeColumn: (auto clamp(70%, 940px, 75%) auto);
   grid-template-areas: ". content .";
   .section3_container {
     grid-area: content;
-    background-color: rgba(201, 181, 181, 0.305);
+    display: grid;
+    grid-template-columns: repeat(50%, 2);
+    grid-template-rows: auto 417px 417px;
+    row-gap: 96px;
+    column-gap: 96px;
+    grid-template-areas:
+      "section_header section_header"
+      "section_img section_img" "section_img_card1 section_img_card2";
   }
+}
+.card_header {
+  grid-area: section_header;
+  display: grid;
+  grid-template-columns: 260px 540px;
+  gap: 93px;
+  grid-template-rows: 100%;
+  grid-template-areas: "h2 p";
+}
+.card_img {
+  grid-area: section_img;
+  @include posIMG("./../../../../public/img/MainPage/section3/Mask\ Group.png");
+  padding: 48px;
+
+}
+.footer_img1 {
+  padding: 48px;
+  @include posIMG(
+    "./../../../../public/img/MainPage/section3/Mask\ Group (1).png"
+  );
+
+  grid-area: section_img_card1;
+}
+.footer_img2 {
+  padding: 48px;
+  @include posIMG(
+    "./../../../../public/img/MainPage/section3/Mask\ Group (2).png"
+  );
+  grid-area: section_img_card2;
+}
+img {
+  width: 100%;
+  height: 100%;
 }

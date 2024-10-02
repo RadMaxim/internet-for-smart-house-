@@ -14,8 +14,8 @@ $gapRow: 192px;
   row-gap: $gapRow;
   grid-template-areas: "section1" "section2" "section3" "section4";
 }
-@for $i from 1 to 5{
-    .section#{$i}{
-        grid-area: section#{$i};
-    }
+@for $i from 1 to 5 {
+  .section#{$i} {
+    grid-area: section#{$i};
+  }
 }

@@ -1,0 +1,42 @@
+$white: white;
+$Blue_01: #1f3f68;
+$Blue_02: #316099;
+$Blue_03: #356ead;
+$black: black;
+.white {
+  color: $white;
+}
+.Blue_01 {
+  color: $Blue_01;
+}
+.blue_02 {
+  color: $Blue_02;
+}
+.blue_03 {
+  color: $Blue_03;
+}
+.black {
+  color: $black;
+}
+.red{
+  color: red;
+}
+p {
+  padding-top: 0;
+  user-select: none;
+  padding-bottom: 16px !important;
+  font-size: 16px;
+  line-height: 26px;
+}
+.link {
+  cursor: pointer;
+}
+.left{
+  text-align: left;
+}
+.right{
+  text-align: right;
+}
+.center{
+  text-align: right;
+}

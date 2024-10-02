@@ -1,4 +1,79 @@
 #root {
+  --Blue_01: #1f3f68;
+  --blue_02: #316099;
+  --blue_04: #5a98d0;
   position: relative;
   overflow: hidden;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: GilroyL;
+  src: url("./../public/fonts/Gilroy-Light.otf");
+}
+@font-face {
+  font-family: GilroyB;
+  src: url("./../public/fonts/Gilroy-ExtraBold.otf");
+}
+html {
+  font-size: 16px;
+}
+p,
+h1,
+h2,
+h3,
+label,
+legend {
+  text-wrap: balance;
+}
+p {
+  font-size: 1rem;
+  font-family: "GilroyL";
+  letter-spacing: 1px;
+  line-height: 26px;
+}
+h2 {
+  font-family: "GilroyB";
+}
+h3 {
+  font-family: "GilroyB";
+}
+label {
+  font-size: 1rem;
+  color: var(--Blue_01) !important;
+  font-family: "GilroyL";
+}
+legend {
+  font-size: 1.25rem;
+  color: var(--Blue_01);
+  font-family: "GilroyB";
+}
+input {
+  outline: none;
+  border: 1px solid #356ead;
+  font-size: 1rem;
+  color: var(--Blue_01) !important;
+  font-family: "GilroyL";
+}
+
+textarea {
+  font-size: 1rem;
+  color: var(--Blue_01) !important;
+  font-family: "GilroyL";
+  text-indent: 42px;
+  padding-top: 21px;
+  resize: vertical;
+  max-height: 300px;
+  min-height: 100px;
+}
+p:has(span, img) {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+h1 {
+  font-family: "GilroyB";
 }

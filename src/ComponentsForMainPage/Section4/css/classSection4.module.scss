@@ -1,9 +1,14 @@
-$sizeRows: (auto 869px);
-
+$sizeRows: (680px 869px);
+$blue_04: #5a98d0;
+@mixin posElem() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .section4 {
   .section4_container {
     height: 100%;
-    background-color: red;
+    background-color: $blue_04;
     border-radius: 200px 0 0 0;
     display: grid;
     grid-template-columns: 100%;
@@ -13,6 +18,26 @@ $sizeRows: (auto 869px);
 }
 .section4_child1_container {
   grid-area: section1;
+  display: grid;
+  grid-template-columns: 213px 940px auto;
+  grid-template-rows: 92px 256px;
+  grid-template-areas: ". top ." ". bottom .";
+  row-gap: 111px;
+  padding-top: 96px;
+
+  .section_top {
+    grid-area: top;
+    @include posElem();
+    div:nth-child(1) {
+      width: 323px;
+    }
+    div:nth-child(2) {
+      width: 540px;
+    }
+  }
+  .section_bottom {
+    grid-area: bottom;
+  }
 }
 .section4_child2_container {
   grid-area: section2;

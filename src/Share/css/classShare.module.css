@@ -1,0 +1,27 @@
+.main {
+  width: 300px;
+  height: 52px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .left {
+  width: 160px;
+  height: 100%;
+}
+.main .left p {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 4px;
+}
+.main .right {
+  width: 80px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .right img {
+  width: 24px;
+  height: 24px;
+}/*# sourceMappingURL=classShare.module.css.map */

@@ -1,0 +1,38 @@
+.li {
+  display: grid;
+  grid-template-columns: 300px 600px;
+  grid-template-rows: 38px 80px 52px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 16px;
+  grid-template-areas: "img title" "img desc" "img wait";
+}
+
+.img {
+  grid-area: img;
+}
+
+.head {
+  grid-area: title;
+}
+.head h3 {
+  line-height: 38px;
+}
+
+.desc {
+  grid-area: desc;
+}
+
+.wait {
+  grid-area: wait;
+}
+.wait * {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}/*# sourceMappingURL=classCardsSection3.module.css.map */

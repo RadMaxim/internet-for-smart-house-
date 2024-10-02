@@ -1,0 +1,73 @@
+@use "./../../../../AllMixin/allMixin.scss";
+
+form {
+    grid-area: form;
+    width: 100%;
+    height: 100%;
+    @include allMixin.posEl(0px);
+    fieldset {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      @include allMixin.posEl(0px);
+      flex-direction: column;
+      gap: 32px;
+      padding: 56px;
+      border: none;
+      box-shadow: 5px 10px 50px 0px #1070b133;
+      .form_Section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+  
+        textarea {
+          height: 144px;
+          width: 100%;
+          border-radius: 10px;
+        }
+      }
+      legend {
+        position: absolute;
+        top: 56px;
+        left: 56px;
+        background-color: none;
+      }
+    }
+  }
+  input[type="text"],
+  input[type="email"] {
+    height: 72px;
+    width: 100%;
+    border-radius: 10px;
+    text-indent: 42px;
+  }
+  input:invalid {
+    border: 1px solid red;
+  }
+  address {
+    grid-area: contacts;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    div:nth-of-type(1) {
+      margin-bottom: 31px;
+      height: 181px;
+    }
+    div:nth-of-type(2) {
+      @include allMixin.posElGap();
+      height: 107px;
+    }
+    div:nth-of-type(3) {
+      @include allMixin.posElGap();
+      height: 122px;
+    }
+    div:nth-of-type(4) {
+      @include allMixin.posElGap();
+      height: 122px;
+    }
+  }
+  

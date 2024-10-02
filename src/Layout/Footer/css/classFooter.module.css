@@ -3,11 +3,136 @@ footer {
   bottom: 0;
   width: 100%;
   height: 869px;
-  background-color: green;
 }
 footer .footer_container {
   height: 100%;
-  background-color: rgba(192, 192, 192, 0.9);
-  width: calc(100% - 96px);
+  background-color: #316099;
   border-radius: 0px 200px 0px 0px;
+  display: grid;
+  grid-template-rows: 391px 1px 478px;
+  grid-template-columns: 100%;
+  grid-template-areas: "top" "center" "bottom";
+}
+footer .footer_container .top {
+  grid-area: top;
+  display: grid;
+  -moz-column-gap: 180px;
+       column-gap: 180px;
+  margin-left: 213px;
+  margin-top: 91px;
+  grid-template-columns: 460px 220px;
+  grid-template-rows: 204px;
+  grid-template-areas: "top_left top_right";
+}
+footer .footer_container .top .top_left {
+  grid-area: top_left;
+}
+footer .footer_container .top .top_left h2 {
+  margin-bottom: 32px;
+  max-width: 400px;
+  color: white !important;
+}
+footer .footer_container .top .top_left p {
+  max-width: 460px;
+  color: white;
+}
+footer .footer_container .top .top_right {
+  grid-area: top_right;
+  display: grid;
+  align-content: center;
+}
+footer .footer_container .center {
+  grid-area: center;
+  width: 1073px;
+  opacity: 40%;
+}
+footer .footer_container .center .line_container {
+  height: 1px;
+  border: 1px solid white;
+}
+footer .footer_container .bottom {
+  grid-area: bottom;
+  display: grid;
+  -moz-column-gap: 77px;
+       column-gap: 77px;
+  grid-template-columns: 300px 163px 97px;
+  grid-template-rows: 96px auto 154px;
+  margin-left: 213px;
+  margin-top: 98px;
+  grid-template-areas: "head1 head2 head3" "cont1 cont2 cont3" "bottoms bottoms bottoms";
+}
+footer .footer_container .bottom .head1 {
+  grid-area: head1;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  justify-content: flex-start;
+}
+footer .footer_container .bottom .head1 h3 {
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+footer .footer_container .bottom .head2 {
+  grid-area: head2;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  justify-content: flex-start;
+}
+footer .footer_container .bottom .head2 h3 {
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+footer .footer_container .bottom .head3 {
+  grid-area: head3;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  justify-content: flex-start;
+}
+footer .footer_container .bottom .head3 h3 {
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+footer .footer_container .bottom .cont1 {
+  grid-area: cont1;
+}
+footer .footer_container .bottom .cont1 p {
+  padding: 0 !important;
+  color: #ffffff !important;
+}
+footer .footer_container .bottom .cont2 {
+  grid-area: cont2;
+}
+footer .footer_container .bottom .cont2 p {
+  padding: 0 !important;
+  color: #ffffff !important;
+}
+footer .footer_container .bottom .cont3 {
+  grid-area: cont3;
+}
+footer .footer_container .bottom .cont3 p {
+  padding: 0 !important;
+  color: #ffffff !important;
+}
+
+.cont1 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.cont2,
+.cont3 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.cont2 p,
+.cont3 p {
+  padding: 0;
+  margin: 0;
 }/*# sourceMappingURL=classFooter.module.css.map */

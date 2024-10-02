@@ -1,0 +1,35 @@
+$white: #ffffff;
+$Blue_01: #1f3f68;
+$Blue_02: #316099;
+$Blue_03: #356ead;
+
+$black: black;
+.white {
+  color: $white;
+}
+.Blue_01 {
+  color: $Blue_01;
+}
+.blue_02 {
+  color: $Blue_02;
+}
+.blue_03 {
+  color: $Blue_03;
+}
+.black {
+  color: $black;
+}
+h1,
+h2,
+h3 {
+  margin-bottom: 16px !important;
+}
+.left{
+  text-align: left;
+}
+.right{
+  text-align: right;
+}
+.center{
+  text-align: right;
+}

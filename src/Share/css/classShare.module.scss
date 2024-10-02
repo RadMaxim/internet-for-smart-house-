@@ -1,0 +1,29 @@
+@mixin posElem() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin sizeElem($w, $h) {
+  width: $w;
+  height: $h;
+}
+.main {
+  @include sizeElem(300px, 52px);
+  @include posElem();
+  .left {
+    @include sizeElem(160px, 100%);
+    p {
+      padding: 0;
+      margin: 0;
+      margin-bottom: 4px;
+    }
+  }
+  .right {
+    @include sizeElem(80px, 100%);
+    @include posElem();
+
+    img {
+      @include sizeElem(24px, 24px);
+    }
+  }
+}

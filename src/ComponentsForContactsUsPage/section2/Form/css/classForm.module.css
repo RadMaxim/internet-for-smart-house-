@@ -1,0 +1,87 @@
+form {
+  grid-area: form;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+}
+form fieldset {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  flex-direction: column;
+  gap: 32px;
+  padding: 56px;
+  border: none;
+  box-shadow: 5px 10px 50px 0px rgba(16, 112, 177, 0.2);
+}
+form fieldset .form_Section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+form fieldset .form_Section textarea {
+  height: 144px;
+  width: 100%;
+  border-radius: 10px;
+}
+form fieldset legend {
+  position: absolute;
+  top: 56px;
+  left: 56px;
+  background-color: none;
+}
+
+input[type=text],
+input[type=email] {
+  height: 72px;
+  width: 100%;
+  border-radius: 10px;
+  text-indent: 42px;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+address {
+  grid-area: contacts;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+address div:nth-of-type(1) {
+  margin-bottom: 31px;
+  height: 181px;
+}
+address div:nth-of-type(2) {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: 107px;
+}
+address div:nth-of-type(3) {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: 122px;
+}
+address div:nth-of-type(4) {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: 122px;
+}/*# sourceMappingURL=classForm.module.css.map */

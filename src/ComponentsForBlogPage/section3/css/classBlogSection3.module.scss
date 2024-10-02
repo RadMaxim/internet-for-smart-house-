@@ -1,7 +1,8 @@
-.section3{
-    background-color: rgba(168, 168, 253, 0.619);
+@use "./../../../AllMixin/allMixin.scss";
+
+.section3 {
 }
-$sizeColumn: (auto clamp(70%, 940px, 75%) auto);
+$sizeColumn: (auto 940px auto);
 .section3 {
   display: grid;
   grid-template-columns: $sizeColumn;
@@ -9,6 +10,16 @@ $sizeColumn: (auto clamp(70%, 940px, 75%) auto);
   grid-template-areas: ". content .";
   .section3_container {
     grid-area: content;
-    background-color: rgba(174, 168, 168, 0.305);
+    margin-top: 56px;
+    .paginator {
+      margin-top: 56px;
+      @include allMixin.posElem(space-between);
+    }
   }
+}
+.ul {
+  width: 100%;
+  @include allMixin.posEl(32px);
+  align-items: flex-start;
+  flex-direction: column;
 }

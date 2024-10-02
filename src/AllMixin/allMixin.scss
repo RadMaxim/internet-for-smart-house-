@@ -1,0 +1,17 @@
+@mixin posEl($gap) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $gap;
+}
+@mixin posElem($x) {
+  display: flex;
+  justify-content: $x;
+  align-items: center;
+}
+@mixin posElGap() {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}

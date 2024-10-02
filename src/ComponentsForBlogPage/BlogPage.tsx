@@ -5,13 +5,17 @@ import BlogSection3 from "./section3/BlogSection3";
 import BlogSection4 from "./secton4/BlogSection4";
 
 const BlogPage = () => {
-  return <>
-  <main className={classBlogPage.main}>
-    <BlogSection1/>
-    <BlogSection2/>
-    <BlogSection3/>
-    <BlogSection4/>
-  </main>
-  </>;
+  console.log("BlogPage");
+
+  return (
+    <>
+      <main className={classBlogPage.main}>
+        <BlogSection1 />
+        <BlogSection2 />
+        <BlogSection3 />
+        <BlogSection4 />
+      </main>
+    </>
+  );
 };
 export default BlogPage;

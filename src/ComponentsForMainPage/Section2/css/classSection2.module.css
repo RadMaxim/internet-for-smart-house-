@@ -6,5 +6,41 @@
 }
 .section2 .section2_container {
   grid-area: content;
-  background-color: rgba(255, 0, 0, 0.305);
+  display: grid;
+  grid-template-columns: auto 380px;
+  grid-template-rows: repeat(25%, 4);
+  -moz-column-gap: 100px;
+       column-gap: 100px;
+  grid-template-areas: "card0 card1" "card2 card1" "card2 card3" ".     card3";
+}
+.section2 .section2_container .card0 {
+  grid-area: card0;
+  width: 500px;
+  height: 138px;
+}
+.section2 .section2_container section:nth-of-type(2) {
+  grid-area: card1;
+}
+.section2 .section2_container section:nth-of-type(3) {
+  grid-area: card2;
+  margin-top: 158px;
+  margin-left: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section2 .section2_container section:nth-of-type(4) {
+  margin-top: 100px;
+  grid-area: card3;
+}
+.section2 .section2_container section:nth-of-type(n + 2) {
+  padding: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 5px 20px 50px 0px rgba(16, 112, 177, 0.2);
+  width: 380px;
+  height: 525px;
+  background-color: white;
 }/*# sourceMappingURL=classSection2.module.css.map */

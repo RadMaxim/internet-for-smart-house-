@@ -10,8 +10,8 @@ const BlogSection3 = () => {
       <section className={classBlogSection3.section3}>
         <div className={classBlogSection3.section3_container}>
           <div className={classBlogSection3.section3_title}>
-          <Heading text="ALL ARTICLE" lvl={2} size={"1.25rem"} color={4}/>
-            </div>
+            <Heading text="ALL ARTICLE" lvl={2} size={"1.25rem"} color={4} />
+          </div>
           <ul className={classBlogSection3.ul}>
             {cards.map((elem, index) => (
               <CardsSection3 key={index} {...elem} />

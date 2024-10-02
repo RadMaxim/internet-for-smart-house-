@@ -2,7 +2,7 @@
 
 .section2 {
 }
-$sizeColumn: (auto  940px auto);
+$sizeColumn: (auto 940px auto);
 .section2 {
   display: grid;
   grid-template-columns: $sizeColumn;
@@ -28,7 +28,7 @@ $sizeColumn: (auto  940px auto);
   }
   .section_3 {
     grid-area: desc;
-    p{
+    p {
       margin: 0 !important;
       padding: 0 !important;
     }

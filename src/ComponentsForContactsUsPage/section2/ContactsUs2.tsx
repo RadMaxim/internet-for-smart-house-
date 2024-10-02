@@ -1,4 +1,3 @@
-
 import Heading from "../../Heading/Heading";
 import Paragraph from "../../Paragraph/Paragraph";
 import TextAnd_Icon from "../../TextAnd_Icon/TextAnd_Icon";
@@ -47,7 +46,7 @@ const ContactsUs2 = () => {
               />
             </div>
           </address>
-         <Form/>
+          <Form />
         </div>
       </section>
     </>

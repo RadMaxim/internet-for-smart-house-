@@ -13,7 +13,6 @@ const Section3 = () => {
               size={"2.25rem"}
               text="Our Finished Project"
               color={2}
-             
             />
             <Paragraph
               text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -31,10 +30,20 @@ const Section3 = () => {
               text="Smart Home Installation"
               positionX="right"
             />
-            <Paragraph text="In Muarakana Housing Estate"    positionX="right" color={1} />
+            <Paragraph
+              text="In Muarakana Housing Estate"
+              positionX="right"
+              color={1}
+            />
           </section>
           <section className={classSection3.footer_img1}>
-            <Heading size={"1.75rem"} color={1} lvl={2} text="Sparklite App" positionX="right" />
+            <Heading
+              size={"1.75rem"}
+              color={1}
+              lvl={2}
+              text="Sparklite App"
+              positionX="right"
+            />
             <Paragraph text="Marketplace" color={1} positionX="right" />
           </section>
           <section className={classSection3.footer_img2}>

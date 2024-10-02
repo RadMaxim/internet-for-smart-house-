@@ -17,23 +17,20 @@
 }
 .img {
   grid-area: img;
-  
 }
 .head {
   grid-area: title;
   h3 {
     line-height: 38px;
   }
-  
 }
 .desc {
   grid-area: desc;
-  
 }
 .wait {
   grid-area: wait;
-  
-  *{
+
+  * {
     padding: 0 !important;
     margin: 0 !important;
   }

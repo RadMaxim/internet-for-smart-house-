@@ -15,9 +15,9 @@ const BlogSection2 = () => {
             <section className={classBlogSection2.section_1}>
               <input type="text" />
             </section>
-            
+
             <section className={classBlogSection2.section_2}>
-            <Heading text="POPULAR" lvl={2} size={"1.25rem"} color={4}/>
+              <Heading text="POPULAR" lvl={2} size={"1.25rem"} color={4} />
             </section>
             <section className={classBlogSection2.section_3}>
               <Heading
@@ -39,8 +39,7 @@ const BlogSection2 = () => {
               <img src={img} alt="" />
             </section>
           </div>
-          <div className={classBlogSection2.section2_container_bottom}>
-          </div>
+          <div className={classBlogSection2.section2_container_bottom}></div>
           <ul>
             {cards.map((elem, index) => {
               return <CardsBlog key={index} {...elem} />;

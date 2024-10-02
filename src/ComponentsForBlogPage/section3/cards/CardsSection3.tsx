@@ -14,7 +14,7 @@ const CardsSection3 = ({ img, header, desc }: CardsSection3I) => {
           <h3>{header}</h3>
         </div>
         <div className={classCardsSection3.desc}>
-          <Paragraph color={5} text={desc}/>
+          <Paragraph color={5} text={desc} />
         </div>
         <div className={classCardsSection3.wait}>
           <Share />

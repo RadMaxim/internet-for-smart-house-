@@ -35,9 +35,7 @@ const Header = () => {
                   {nav.map((val, index) => {
                     return (
                       <li key={index} className={classHeader.li}>
-                        <Link to={val.link}>
-                          {val.name}
-                        </Link>
+                        <Link to={val.link}>{val.name}</Link>
                       </li>
                     );
                   })}

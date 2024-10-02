@@ -43,17 +43,18 @@ const Heading = ({ lvl, color, size, text, positionX }: Heading) => {
           </>
         ) : lvl == 2 ? (
           <>
-            <h2 style={{ fontSize: size }} 
-            className={`${classHeading[elem.color]} ${classHeading[elem.position]}`}
+            <h2
+              style={{ fontSize: size }}
+              className={`${classHeading[elem.color]} ${classHeading[elem.position]}`}
             >
               {text}
             </h2>
           </>
         ) : (
           <>
-            <h3 style={{ fontSize: size }} 
-            
-            className={`${classHeading[elem.color]} ${classHeading[elem.position]}`}
+            <h3
+              style={{ fontSize: size }}
+              className={`${classHeading[elem.color]} ${classHeading[elem.position]}`}
             >
               {text}
             </h3>

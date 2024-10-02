@@ -4,9 +4,8 @@ export interface Paragraph {
   color: 1 | 2 | 3 | 4 | 5;
   button?: boolean;
   positionX?: "left" | "center" | "right";
-
 }
-const Paragraph = ({ text, color, button,positionX }: Paragraph) => {
+const Paragraph = ({ text, color, button, positionX }: Paragraph) => {
   const parSetting = {
     color:
       color == 1
@@ -16,9 +15,11 @@ const Paragraph = ({ text, color, button,positionX }: Paragraph) => {
           : color == 3
             ? "blue_02"
             : color == 4
-              ? "blue_03":color==5?
-               "red":"black",
-              position:
+              ? "blue_03"
+              : color == 5
+                ? "red"
+                : "black",
+    position:
       positionX == "left"
         ? "left"
         : positionX == "center"

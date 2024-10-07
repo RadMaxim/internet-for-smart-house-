@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"classMainLayout.module.css"}
+{"version":3,"sources":["classMainLayout.module.scss","classMainLayout.module.css"],"names":[],"mappings":"AAAA;EAII,gCAAA;ACFJ;ADDI;EACI,2BAAA;ACGR;;ADCA;EAMI,gCAAA;EACA,gCAAA;ACHJ;ADHI;EACI,YAAA;EACA,2BAAA;ACKR","file":"classMainLayout.module.css"}

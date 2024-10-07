@@ -17,7 +17,7 @@ footer .footer_container .top {
   grid-area: top;
   display: grid;
   -moz-column-gap: 180px;
-  column-gap: 180px;
+       column-gap: 180px;
   margin-left: 213px;
   margin-top: 91px;
   grid-template-columns: 460px 220px;
@@ -54,7 +54,7 @@ footer .footer_container .bottom {
   grid-area: bottom;
   display: grid;
   -moz-column-gap: 77px;
-  column-gap: 77px;
+       column-gap: 77px;
   grid-template-columns: 300px 163px 97px;
   grid-template-rows: 96px auto 154px;
   margin-left: 213px;
@@ -135,4 +135,4 @@ footer .footer_container .bottom .cont3 p {
 .cont3 p {
   padding: 0;
   margin: 0;
-} /*# sourceMappingURL=classFooter.module.css.map */
+}/*# sourceMappingURL=classFooter.module.css.map */

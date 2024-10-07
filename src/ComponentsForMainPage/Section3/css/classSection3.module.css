@@ -11,7 +11,7 @@
   grid-template-rows: auto 417px 417px;
   row-gap: 96px;
   -moz-column-gap: 96px;
-  column-gap: 96px;
+       column-gap: 96px;
   grid-template-areas: "section_header section_header" "section_img section_img" "section_img_card1 section_img_card2";
 }
 
@@ -32,9 +32,7 @@
   overflow: hidden;
   background-size: 100%;
   opacity: 100%;
-  transition:
-    opacity 0.7s ease,
-    background-size 0.7s ease;
+  transition: opacity 0.7s ease, background-size 0.7s ease;
   padding: 48px;
   border-radius: 10px;
 }
@@ -48,9 +46,7 @@
   overflow: hidden;
   background-size: 100%;
   opacity: 100%;
-  transition:
-    opacity 0.7s ease,
-    background-size 0.7s ease;
+  transition: opacity 0.7s ease, background-size 0.7s ease;
   border-radius: 10px;
   grid-area: section_img_card1;
 }
@@ -65,9 +61,7 @@
   overflow: hidden;
   background-size: 100%;
   opacity: 100%;
-  transition:
-    opacity 0.7s ease,
-    background-size 0.7s ease;
+  transition: opacity 0.7s ease, background-size 0.7s ease;
   grid-area: section_img_card2;
 }
 
@@ -83,4 +77,4 @@ img {
   background-position: center;
   cursor: pointer;
   opacity: 80%;
-} /*# sourceMappingURL=classSection3.module.css.map */
+}/*# sourceMappingURL=classSection3.module.css.map */

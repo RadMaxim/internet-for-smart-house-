@@ -1,18 +1,13 @@
-import React, { useCallback, useContext } from "react";
+import React, { useCallback} from "react";
 import TextAnd_Icon from "../../../TextAnd_Icon/TextAnd_Icon";
 import classPaginator from "./css/classPaginator.module.css";
-import { Paginators } from "../../../Context/Context";
 import { cards } from "../cardsSection3";
+import PaginatorsHooks from "../../../MyHooks/PaginatorHooks";
 
 const Paginator = React.memo(() => {
-  console.log("PAGINATOR");
 
-  const context = useContext(Paginators);
-  if (!context) {
-    throw new Error("Paginators");
-  }
-  const { setNum } = context;
-
+  const { setNum } = PaginatorsHooks();
+  
   const handlePageChange = useCallback(
     (direction: number) => {
       setNum((num) => {

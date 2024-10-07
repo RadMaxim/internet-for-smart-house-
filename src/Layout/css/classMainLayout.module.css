@@ -1,1 +1,15 @@
-/*# sourceMappingURL=classMainLayout.module.css.map */
+.light {
+  transition: background 0.5s ease;
+}
+.light p, .light h1, .light h2, .light h3 {
+  transition: color 0.5s ease;
+}
+
+.dark {
+  background: rgba(0, 0, 0, 0.614);
+  transition: background 0.5s ease;
+}
+.dark p, .dark h1, .dark h2, .dark h3 {
+  color: white;
+  transition: color 0.5s ease;
+}/*# sourceMappingURL=classMainLayout.module.css.map */

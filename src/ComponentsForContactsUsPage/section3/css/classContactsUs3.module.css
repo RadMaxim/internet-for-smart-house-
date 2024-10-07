@@ -10,4 +10,5 @@
   align-items: center;
   grid-area: content;
   background-color: rgba(255, 0, 0, 0.305);
-} /*# sourceMappingURL=classContactsUs3.module.css.map */
+  z-index: 1;
+}/*# sourceMappingURL=classContactsUs3.module.css.map */

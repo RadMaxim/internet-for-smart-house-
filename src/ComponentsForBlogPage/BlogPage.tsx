@@ -8,7 +8,6 @@ import BlogSection4 from "./secton4/BlogSection4";
 
 const BlogPage = () => {
   const [num, setNum] = useState<number>(0);
-  console.log("BlogPage");
 
   return (
     <>

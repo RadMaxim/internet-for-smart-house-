@@ -1,5 +1,5 @@
 .white {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .Blue_01 {
@@ -33,5 +33,5 @@ h3 {
 }
 
 .center {
-  text-align: right;
+  text-align: center;
 } /*# sourceMappingURL=classHeading.module.css.map */

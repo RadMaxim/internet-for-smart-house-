@@ -4,13 +4,14 @@ import classForm from "./css/classForm.module.css";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { schema } from "./ValidationYUP/yup";
 import Paragraph from "../../../Paragraph/Paragraph";
+import { useCallback } from "react";
 
 export interface FormData {
   Full_Name: string;
   Email: string;
   textArea: string;
 }
-const Form = () => {
+const Form: React.FC = () => {
   const {
     register,
     handleSubmit,
@@ -18,11 +19,8 @@ const Form = () => {
   } = useForm<FormData>({
     resolver: yupResolver(schema),
   });
-  console.log(errors);
 
   const send: SubmitHandler<FormData> = (data) => {
-    console.log(errors);
-
     console.log(data);
   };
   return (
@@ -37,11 +35,8 @@ const Form = () => {
               type="text"
               required
               placeholder="Your Name"
-              minLength={2}
-              maxLength={30}
-              // pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
             />
-            <Paragraph text={errors.Full_Name?.message || ""} color={5} />
+            <Paragraph color={5}>{errors.Full_Name?.message || ""}</Paragraph>
           </div>
           <legend>SEND US MESSAGE</legend>
           <div className={classForm.form_Section}>
@@ -50,12 +45,9 @@ const Form = () => {
               {...register("Email")}
               type="email"
               id="Email"
-              required
               placeholder="Your Email"
-              minLength={4}
-              maxLength={30}
             />
-            <Paragraph text={errors.Email?.message || ""} color={5} />
+            <Paragraph color={5}>{errors.Email?.message || ""}</Paragraph>
           </div>
           <div className={classForm.form_Section}>
             <label htmlFor="Message">Message</label>
@@ -65,10 +57,9 @@ const Form = () => {
               rows={5}
               cols={30}
               id="Message"
-              required
               placeholder="Your Message"
             ></textarea>
-            <Paragraph text={errors.textArea?.message || ""} color={5} />
+            <Paragraph color={5}>{errors.textArea?.message || ""}</Paragraph>
           </div>
           <Button text="SUBMIT" w={"100"} h={72} />
         </fieldset>

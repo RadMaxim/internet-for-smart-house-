@@ -12,9 +12,13 @@ const CardSection2 = ({ h3, IMG, desc }: CardSection2I) => {
           <div>
             <img src={IMG} alt="" />
           </div>
-          <Heading lvl={3} color={2} text={h3} size={"1.25rem"} />
-          <Paragraph text={desc} color={2} />
-          <TextAnd_Icon text="Learn more" IMG="arrowRight" place="right" />
+          <Heading lvl={3} color={2} size={"1.25rem"}>
+            {h3}
+          </Heading>
+          <Paragraph color={2}>{desc}</Paragraph>
+          <TextAnd_Icon IMG="arrowRight" place="right">
+            Learn more
+          </TextAnd_Icon>
         </div>
       </section>
     </>

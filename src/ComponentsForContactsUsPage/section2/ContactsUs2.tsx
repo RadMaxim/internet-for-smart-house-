@@ -1,4 +1,5 @@
 import Heading from "../../Heading/Heading";
+import IMG from "../../IMG/IMG";
 import Paragraph from "../../Paragraph/Paragraph";
 import TextAnd_Icon from "../../TextAnd_Icon/TextAnd_Icon";
 import { imgMain } from "./contact";
@@ -11,39 +12,40 @@ const ContactsUs2 = () => {
       <section className={classContactsUs2.section2}>
         <div className={classContactsUs2.section2_container}>
           <address>
-            <div>
-              <img src={imgMain} alt="" />
-            </div>
+            <IMG src={imgMain} />
 
             <div>
-              <Heading text="ADDRESS" size={"1.25rem"} color={2} lvl={3} />
-              <Paragraph
-                text="Id convallis placerat sit sed duis id amet volutpat quam a,
+              <Heading size={"1.25rem"} color={2} lvl={3}>
+                ADDRESS
+              </Heading>
+              <Paragraph color={2}>
+                Id convallis placerat sit sed duis id amet volutpat quam a,
                 pharetra.
-             "
-                color={2}
-              />
+              </Paragraph>
             </div>
             <div>
-              <Heading text="PHONE" size={"1.25rem"} color={2} lvl={3} />
+              <Heading size={"1.25rem"} color={2} lvl={3}>
+                PHONE
+              </Heading>
 
-              <TextAnd_Icon IMG="phone" text="+62-812-7313-4321" place="left" />
-              <TextAnd_Icon IMG="phone" text="+62-812-7313-4321" place="left" />
+              <TextAnd_Icon IMG="phone" place="left">
+                +62-812-7313-4321
+              </TextAnd_Icon>
+              <TextAnd_Icon IMG="phone" place="left">
+                +62-812-7313-4321
+              </TextAnd_Icon>
             </div>
             <div>
-              <Heading
-                text="ONLINE SERVICE"
-                size={"1.25rem"}
-                color={2}
-                lvl={3}
-              />
+              <Heading size={"1.25rem"} color={2} lvl={3}>
+                ONLINE SERVICE
+              </Heading>
 
-              <TextAnd_Icon IMG="glob" text="www.afrianska.com" place="left" />
-              <TextAnd_Icon
-                IMG="letter"
-                text=" hello.afrian@gmail.com"
-                place="left"
-              />
+              <TextAnd_Icon IMG="glob" place="left">
+                www.afrianska.com
+              </TextAnd_Icon>
+              <TextAnd_Icon IMG="letter" place="left">
+                hello.afrian@gmail.com
+              </TextAnd_Icon>
             </div>
           </address>
           <Form />

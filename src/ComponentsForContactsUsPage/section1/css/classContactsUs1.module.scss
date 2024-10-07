@@ -1,3 +1,14 @@
 .section1 {
-  background-color: rgba(0, 0, 255, 0.197);
+}
+.section1_container {
+  margin-top: 130px;
+  background: linear-gradient(253.6deg, #98d0fc 2.46%, #3481d7 93.24%);
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .heading {
+    width: 780px;
+    height: 150px;
+  }
 }

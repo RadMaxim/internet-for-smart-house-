@@ -1,11 +1,12 @@
+import React from "react";
 import classParagraph from "./css/classParagraph.module.css";
 export interface Paragraph {
-  text: string;
   color: 1 | 2 | 3 | 4 | 5;
   button?: boolean;
   positionX?: "left" | "center" | "right";
+  children: React.ReactNode;
 }
-const Paragraph = ({ text, color, button, positionX }: Paragraph) => {
+const Paragraph = ({ color, button, positionX, children }: Paragraph) => {
   const parSetting = {
     color:
       color == 1
@@ -35,7 +36,7 @@ const Paragraph = ({ text, color, button, positionX }: Paragraph) => {
         <p
           className={`${classParagraph[parSetting.color]} ${classParagraph[parSetting.position]} ${button ? classParagraph.link : classParagraph.p}`}
         >
-          {text}
+          {children}
         </p>
       </div>
     </>

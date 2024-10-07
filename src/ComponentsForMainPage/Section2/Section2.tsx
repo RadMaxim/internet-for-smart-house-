@@ -8,12 +8,9 @@ const Section2 = () => {
       <section className={classSection2.section2}>
         <div className={classSection2.section2_container}>
           <section className={classSection2.card0}>
-            <Heading
-              lvl={2}
-              text="What we do to help our client grow in digital era,"
-              color={3}
-              size={"2.25rem"}
-            />
+            <Heading lvl={2} color={3} size={"2.25rem"}>
+              What we do to help our client grow in digital era,
+            </Heading>
           </section>
           {cardsArr.map((elem, index) => (
             <CardSection2 key={index} {...elem} />

@@ -6,6 +6,8 @@ import { cards } from "./cards/cards";
 import Heading from "../../Heading/Heading";
 import Paragraph from "../../Paragraph/Paragraph";
 import Share from "../../Share/Share";
+
+// import { cards } from "../section3/cardsSection3";
 const BlogSection2 = () => {
   return (
     <>
@@ -17,22 +19,19 @@ const BlogSection2 = () => {
             </section>
 
             <section className={classBlogSection2.section_2}>
-              <Heading text="POPULAR" lvl={2} size={"1.25rem"} color={4} />
+              <Heading lvl={2} size={"1.25rem"} color={4}>
+                POPULAR
+              </Heading>
             </section>
             <section className={classBlogSection2.section_3}>
-              <Heading
-                text="Feugiat sodales at nullam tellus."
-                lvl={2}
-                size={"3rem"}
-                color={2}
-              />
-              <Paragraph
-                text=" Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Mi posuere nibh tempor fringilla porta pellentesque ipsum.
-                "
-                color={5}
-              />
+              <Heading lvl={2} size={"3rem"} color={2}>
+                Feugiat sodales at nullam tellus.
+              </Heading>
+              <Paragraph color={5}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi
+                posuere nibh tempor fringilla porta pellentesque ipsum.
+              </Paragraph>
               <Share />
             </section>
             <section className={classBlogSection2.section_4}>

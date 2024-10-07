@@ -7,8 +7,8 @@ const Share = () => {
     <>
       <div className={classShare.main}>
         <div className={classShare.left}>
-          <Paragraph text="Samatha Leuthex" color={5} />
-          <Paragraph text="May 5, 3 min read" color={5} />
+          <Paragraph color={5}>Samatha Leuthex</Paragraph>
+          <Paragraph color={5}>May 5, 3 min read</Paragraph>
         </div>
         <div className={classShare.right}>
           <img src={share1} alt="" />

@@ -20,19 +20,14 @@ const Section1 = () => {
       <section className={classSection1.section1}>
         <div className={classSection1.section1_container}>
           <div className={classSection1.left}>
-            <Heading
-              lvl={1}
-              size={"3.3rem"}
-              text="New Automation Tool for Your Home"
-              color={2}
-            />
-            <Paragraph
-              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Faucibus tristique vulputate ultrices ut mauris tellus at.
-                Posuere sollicitudin odio tellus elit.
-              "
-              color={2}
-            />
+            <Heading lvl={1} size={"3.3rem"} color={2}>
+              New Automation Tool for Your Home
+            </Heading>
+            <Paragraph color={2}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
+              tristique vulputate ultrices ut mauris tellus at. Posuere
+              sollicitudin odio tellus elit.
+            </Paragraph>
             <div>
               <Button text="See Our Project" w={220} h={56} />
             </div>

@@ -1,7 +1,11 @@
 @use "./../../../AllMixin/allMixin.scss";
 
-$sizeColumn: (auto clamp(70%, 940px, 75%) auto);
-
+$sizeColumn: (auto 940px auto);
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
 .section2 {
   display: grid;
   grid-template-columns: $sizeColumn;
@@ -10,8 +14,31 @@ $sizeColumn: (auto clamp(70%, 940px, 75%) auto);
   .section2_container {
     grid-area: content;
     display: grid;
-    grid-template-columns: auto 540px;
+    grid-template-columns: 400px 540px;
     grid-template-rows: 800px;
     grid-template-areas: "contacts form";
+  }
+}
+address {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 30px;
+  & > * {
+    width: 300px;
+  }
+  & > div:nth-of-type(1) {
+    margin-top: 63px !important;
+    height: 181px;
+  }
+  & > div:nth-of-type(2) {
+    height: 107px;
+    padding: 0;
+  }
+  & > div:nth-of-type(3) {
+    height: 122px;
+  }
+  & > div:nth-of-type(4) {
+    height: 122px;
   }
 }

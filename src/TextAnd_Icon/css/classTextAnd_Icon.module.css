@@ -67,4 +67,28 @@ span svg {
 .texts {
   color: rgb(255, 255, 255);
   margin: 0;
+}
+
+.white {
+  color: white !important;
+}
+
+.Blue_01 {
+  color: #1f3f68 !important;
+}
+
+.blue_02 {
+  color: #316099 !important;
+}
+
+.blue_03 {
+  color: #356ead !important;
+}
+
+.black {
+  color: black;
+}
+
+.red {
+  color: red;
 } /*# sourceMappingURL=classTextAnd_Icon.module.css.map */

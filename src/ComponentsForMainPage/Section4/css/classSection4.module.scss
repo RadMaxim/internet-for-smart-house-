@@ -1,9 +1,14 @@
 $sizeRows: (680px 869px);
 $blue_04: #5a98d0;
-@mixin posElem() {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@mixin posElem($x, $y) {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: $x;
+  align-items: $y;
 }
 .section4 {
   .section4_container {
@@ -27,7 +32,7 @@ $blue_04: #5a98d0;
 
   .section_top {
     grid-area: top;
-    @include posElem();
+    @include posElem(space-between, center);
     div:nth-child(1) {
       width: 323px;
     }
@@ -44,4 +49,36 @@ $blue_04: #5a98d0;
   background-color: rgba(0, 0, 255, 0.381);
   width: calc(100% - 96px);
   border-radius: 0px 200px 0px 0px;
+}
+.section_bottom > ul {
+  @include posElem(center, center);
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  gap: 0;
+  position: relative;
+
+  li {
+    width: 25%;
+    height: 128px;
+    @include posElem(center, center);
+    border: 2px solid white;
+    transition: background 0.5s ease;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #39a3ff;
+    }
+  }
+}
+.section_bottom > ul::before {
+  box-sizing: border-box;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 3px solid $blue_04;
 }

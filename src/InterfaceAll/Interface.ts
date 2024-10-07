@@ -1,7 +1,10 @@
+import React from "react";
+
 export interface TextAnd_IconI {
-  text: string;
+  children: React.ReactNode;
   IMG: "arrowRight" | "arrowLeft" | "phone" | "glob" | "letter" | string;
   place: "right" | "left";
+  color?: 1 | 2 | 3 | 4 | 5;
 }
 export interface CardSection2I {
   h3: string;

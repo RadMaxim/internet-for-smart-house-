@@ -1,13 +1,14 @@
+import React from "react";
 import classHeading from "./css/classHeading.module.css";
 
 export interface Heading {
   lvl: number;
-  color: 1 | 2 | 3 | 4 | 5;
+  color?: 1 | 2 | 3 | 4 | 5;
   size: any;
-  text: string;
   positionX?: "left" | "center" | "right";
+  children: React.ReactNode;
 }
-const Heading = ({ lvl, color, size, text, positionX }: Heading) => {
+const Heading = ({ lvl, color, size, positionX, children }: Heading) => {
   const elem = {
     lvl: lvl,
     color:
@@ -38,7 +39,7 @@ const Heading = ({ lvl, color, size, text, positionX }: Heading) => {
               style={{ fontSize: size }}
               className={`${classHeading[elem.color]} ${classHeading[elem.position]}`}
             >
-              {text}
+              {children}
             </h1>
           </>
         ) : lvl == 2 ? (
@@ -47,7 +48,7 @@ const Heading = ({ lvl, color, size, text, positionX }: Heading) => {
               style={{ fontSize: size }}
               className={`${classHeading[elem.color]} ${classHeading[elem.position]}`}
             >
-              {text}
+              {children}
             </h2>
           </>
         ) : (
@@ -56,7 +57,7 @@ const Heading = ({ lvl, color, size, text, positionX }: Heading) => {
               style={{ fontSize: size }}
               className={`${classHeading[elem.color]} ${classHeading[elem.position]}`}
             >
-              {text}
+              {children}
             </h3>
           </>
         )}

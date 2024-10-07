@@ -5,7 +5,7 @@ $Blue_03: #356ead;
 
 $black: black;
 .white {
-  color: $white;
+  color: $white !important;
 }
 .Blue_01 {
   color: $Blue_01;
@@ -31,5 +31,5 @@ h3 {
   text-align: right;
 }
 .center {
-  text-align: right;
+  text-align: center;
 }

@@ -1,8 +1,7 @@
-import { Link } from "react-router-dom";
 import classHeader from "./css/classHeader.module.css";
-import { nav } from "./navigate/navigate";
 import icon1 from "./../../../public/img/Layout/Ellipse.svg";
 import icon2 from "./../../../public/img/Layout/Ellipse (1).svg";
+import Nav from "./Nav/Nav";
 
 const Header = () => {
   return (
@@ -30,17 +29,7 @@ const Header = () => {
               <span></span>
             </label>
             <div className={classHeader.menu}>
-              <div className={classHeader.menu_container}>
-                <ul className={classHeader.ul}>
-                  {nav.map((val, index) => {
-                    return (
-                      <li key={index} className={classHeader.li}>
-                        <Link to={val.link}>{val.name}</Link>
-                      </li>
-                    );
-                  })}
-                </ul>
-              </div>
+              <Nav />
             </div>
           </div>
         </div>

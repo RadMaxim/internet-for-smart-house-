@@ -1,0 +1,19 @@
+.Loader_main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: loader 1s infinite;
+}
+
+@keyframes loader {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  30%,
+  60% {
+    transform: scale(1.5);
+  }
+} /*# sourceMappingURL=cssLoader.module.css.map */

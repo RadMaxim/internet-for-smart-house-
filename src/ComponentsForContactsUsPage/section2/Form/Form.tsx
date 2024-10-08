@@ -31,16 +31,9 @@ const Form: React.FC = () => {
     };
     console.log("err");
     console.log(request.onupgradeneeded);
-
-    request.onupgradeneeded = function (event) {
-      console.log("ev");
-
-      const db = request.result;
-      console.log(db);
-      console.log(data);
-      //  if ( !db.objectStoreNames.contains ( " userData " ) )
-      //   { const objectStore = db.createObjectStore ( " userData" , { keyPath : "id" }); }     }   ;
-    };
+    console.log(data);
+    
+   
   };
   return (
     <>

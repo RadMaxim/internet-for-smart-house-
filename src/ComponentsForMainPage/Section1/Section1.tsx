@@ -17,7 +17,7 @@ import {
 const Section1 = () => {
   return (
     <>
-      <section className={classSection1.section1}>
+      <section  className={classSection1.section1}>
         <div className={classSection1.section1_container}>
           <div className={classSection1.left}>
             <Heading lvl={1} size={"3.3rem"} color={2}>

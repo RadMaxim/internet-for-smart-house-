@@ -6,16 +6,20 @@ import { cards } from "./cards/cards";
 import Heading from "../../Heading/Heading";
 import Paragraph from "../../Paragraph/Paragraph";
 import Share from "../../Share/Share";
-
+import { memo } from "react";
+import { CiSearch } from "react-icons/ci";
 // import { cards } from "../section3/cardsSection3";
-const BlogSection2 = () => {
+const BlogSection2 = memo(() => {
   return (
     <>
       <section className={classBlogSection2.section2}>
         <div className={classBlogSection2.section2_container}>
           <div className={classBlogSection2.section2_container_top}>
             <section className={classBlogSection2.section_1}>
+             <form action="" method="get">
               <input type="text" />
+              <CiSearch/>
+              </form> 
             </section>
 
             <section className={classBlogSection2.section_2}>
@@ -27,7 +31,8 @@ const BlogSection2 = () => {
               <Heading lvl={2} size={"3rem"} color={2}>
                 Feugiat sodales at nullam tellus.
               </Heading>
-              <Paragraph color={5}>
+
+              <Paragraph color={2}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi
                 posuere nibh tempor fringilla porta pellentesque ipsum.
@@ -48,5 +53,5 @@ const BlogSection2 = () => {
       </section>
     </>
   );
-};
+});
 export default BlogSection2;

@@ -7,10 +7,7 @@ const ContactsUs3 = () => {
     <>
       <section className={classContactsUs3.section3}>
         <div className={classContactsUs3.section3_container}>
-          <MapContainer
-            center={[51.505, -0.09]}
-            zoom={13}
-          >
+          <MapContainer center={[51.505, -0.09]} zoom={13}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
           </MapContainer>
         </div>

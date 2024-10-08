@@ -1,17 +1,14 @@
-import { useContext } from "react";
+import { memo } from "react";
 import Heading from "../../Heading/Heading";
 import CardsSection3 from "./cards/CardsSection3";
 import { cards } from "./cardsSection3";
 import classBlogSection3 from "./css/classBlogSection3.module.css";
 import Paginator from "./Paginator/Paginator";
-import { Paginators } from "../../Context/Context";
+import PaginatorsHooks from "../../MyHooks/PaginatorHooks";
 
-const BlogSection3 = () => {
-  const context = useContext(Paginators);
-  if (!context) {
-    throw new Error("Paginators");
-  }
-  const { num } = context;
+const BlogSection3 = memo(() => {
+  const { num } = PaginatorsHooks();
+
   return (
     <>
       <section className={classBlogSection3.section3}>
@@ -31,5 +28,5 @@ const BlogSection3 = () => {
       </section>
     </>
   );
-};
+});
 export default BlogSection3;

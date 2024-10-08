@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import classHeading from "./css/classHeading.module.css";
 
 export interface Heading {
@@ -8,7 +8,7 @@ export interface Heading {
   positionX?: "left" | "center" | "right";
   children: React.ReactNode;
 }
-const Heading = ({ lvl, color, size, positionX, children }: Heading) => {
+const Heading = memo(({ lvl, color, size, positionX, children }: Heading) => {
   const elem = {
     lvl: lvl,
     color:
@@ -64,5 +64,5 @@ const Heading = ({ lvl, color, size, positionX, children }: Heading) => {
       </div>
     </>
   );
-};
+});
 export default Heading;

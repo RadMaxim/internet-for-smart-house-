@@ -5,7 +5,6 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { schema } from "./ValidationYUP/yup";
 import Paragraph from "../../../Paragraph/Paragraph";
 
-
 export interface FormData {
   Full_Name: string;
   Email: string;
@@ -21,7 +20,27 @@ const Form: React.FC = () => {
   });
 
   const send: SubmitHandler<FormData> = (data) => {
-    console.log(data);
+    const idb = window.indexedDB;
+    if (!idb) {
+      throw new Error("mistake of idb");
+    }
+    const request = idb.open(" test-db", 1);
+    request.onerror = function (event) {
+      console.error(" Произошла ошибка IndexedDB");
+      console.error(event);
+    };
+    console.log("err");
+    console.log(request.onupgradeneeded);
+
+    request.onupgradeneeded = function (event) {
+      console.log("ev");
+
+      const db = request.result;
+      console.log(db);
+      console.log(data);
+      //  if ( !db.objectStoreNames.contains ( " userData " ) )
+      //   { const objectStore = db.createObjectStore ( " userData" , { keyPath : "id" }); }     }   ;
+    };
   };
   return (
     <>

@@ -3,8 +3,9 @@ import classTextAnd_Icon from "./css/classTextAnd_Icon.module.css";
 import { glob, leftArrow, mail, phone, rightArrow } from "./getIcons.tsx";
 import twoCircle from "./../../public/img/Layout/2_circle.svg";
 import Heading from "../Heading/Heading.tsx";
+import { memo } from "react";
 
-const TextAnd_Icon = ({ IMG, place, children, color }: TextAnd_IconI) => {
+const TextAnd_Icon = memo(({ IMG, place, children, color }: TextAnd_IconI) => {
   const elem = {
     IMG:
       IMG === "arrowLeft"
@@ -86,5 +87,5 @@ const TextAnd_Icon = ({ IMG, place, children, color }: TextAnd_IconI) => {
       </div>
     </>
   );
-};
+});
 export default TextAnd_Icon;

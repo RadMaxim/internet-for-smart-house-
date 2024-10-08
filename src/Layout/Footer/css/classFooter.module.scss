@@ -1,5 +1,6 @@
 $blue_02: #316099;
 $white: #ffffff;
+$sizeColumn: (auto 940px auto);
 @mixin posElem($y) {
   display: flex;
   flex-direction: column;
@@ -16,13 +17,13 @@ footer {
     border-radius: 0px 200px 0px 0px;
     display: grid;
     grid-template-rows: 391px 1px 478px;
-    grid-template-columns: 100%;
-    grid-template-areas: "top" "center" "bottom";
+    grid-template-columns: $sizeColumn;
+    grid-template-areas: ". top ." ". center ." ". bottom .";
     .top {
       grid-area: top;
       display: grid;
       column-gap: 180px;
-      margin-left: 213px;
+     
       margin-top: 91px;
       grid-template-columns: 460px 220px;
       grid-template-rows: 204px;
@@ -48,7 +49,6 @@ footer {
     }
     .center {
       grid-area: center;
-      width: 1073px;
       opacity: 40%;
       .line_container {
         height: 1px;
@@ -61,7 +61,6 @@ footer {
       column-gap: 77px;
       grid-template-columns: 300px 163px 97px;
       grid-template-rows: 96px auto 154px;
-      margin-left: 213px;
       margin-top: 98px;
       grid-template-areas: "head1 head2 head3" "cont1 cont2 cont3" "bottoms bottoms bottoms";
       @for $i from 1 to 4 {

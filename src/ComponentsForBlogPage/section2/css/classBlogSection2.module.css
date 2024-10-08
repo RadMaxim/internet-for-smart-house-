@@ -36,4 +36,30 @@ ul {
   justify-content: center;
   align-items: center;
   gap: 20px;
+}
+
+form {
+  width: 100%;
+  position: relative;
+}
+form svg {
+  position: absolute;
+  top: 50%;
+  left: 24px;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  fill: #1F3F68;
+  transition: 0.7s;
+}
+form svg:hover {
+  width: 30px;
+  height: 30px;
+}
+form input {
+  width: 100%;
+  height: 56px;
+  text-indent: 72px;
+  font-size: 1.5rem;
 }/*# sourceMappingURL=classBlogSection2.module.css.map */

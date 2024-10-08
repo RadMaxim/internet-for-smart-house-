@@ -1,10 +1,11 @@
+import { memo } from "react";
 import Button from "../../button/Button";
 import Heading from "../../Heading/Heading";
 import Paragraph from "../../Paragraph/Paragraph";
 import TextAnd_Icon from "../../TextAnd_Icon/TextAnd_Icon";
 import classFooter from "./css/classFooter.module.css";
 
-const Footer = () => {
+const Footer = memo(() => {
   return (
     <>
       <footer>
@@ -89,5 +90,5 @@ const Footer = () => {
       </footer>
     </>
   );
-};
+});
 export default Footer;

@@ -1,7 +1,8 @@
+import { memo } from "react";
 import { Buttons } from "../InterfaceAll/Interface";
 import classButton from "./css/classButton.module.css";
 
-const Button = ({ text, w, h }: Buttons) => {
+const Button = memo(({ text, w, h }: Buttons) => {
   const prop = {
     w: typeof w === "string" ? `${w}%` : `${w}px`,
     h: typeof h === "string" ? `${h}%` : `${h}px`,
@@ -16,5 +17,5 @@ const Button = ({ text, w, h }: Buttons) => {
       />
     </>
   );
-};
+});
 export default Button;

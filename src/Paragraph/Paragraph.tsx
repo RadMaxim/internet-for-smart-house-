@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import classParagraph from "./css/classParagraph.module.css";
 export interface Paragraph {
   color: 1 | 2 | 3 | 4 | 5;
@@ -6,7 +6,7 @@ export interface Paragraph {
   positionX?: "left" | "center" | "right";
   children: React.ReactNode;
 }
-const Paragraph = ({ color, button, positionX, children }: Paragraph) => {
+const Paragraph = memo(({ color, button, positionX, children }: Paragraph) => {
   const parSetting = {
     color:
       color == 1
@@ -41,5 +41,5 @@ const Paragraph = ({ color, button, positionX, children }: Paragraph) => {
       </div>
     </>
   );
-};
+});
 export default Paragraph;

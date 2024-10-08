@@ -1,6 +1,7 @@
+import { memo } from "react";
 import classBlogSection4 from "./css/classBlogSection4.module.css";
 
-const BlogSection4 = () => {
+const BlogSection4 = memo(() => {
   return (
     <>
       <section className={classBlogSection4.section4}>
@@ -8,5 +9,5 @@ const BlogSection4 = () => {
       </section>
     </>
   );
-};
+});
 export default BlogSection4;

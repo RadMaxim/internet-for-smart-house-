@@ -1,15 +1,21 @@
-.light{
-    p,h1,h2,h3{
-        transition: color 0.5s  ease;
-    }
-    transition: background 0.5s ease;
+.light {
+  p,
+  h1,
+  h2,
+  h3 {
+    transition: color 0.5s ease;
+  }
+  transition: background 0.5s ease;
 }
-.dark{
-    p,h1,h2,h3{
-        color: white;
-        transition: color 0.5s  ease;
-    }
-    
-    background: rgba(0, 0, 0, 0.614);
-    transition: background 0.5s ease;
+.dark {
+  p,
+  h1,
+  h2,
+  h3 {
+    color: white;
+    transition: color 0.5s ease;
+  }
+
+  background: rgba(0, 0, 0, 0.614);
+  transition: background 0.5s ease;
 }

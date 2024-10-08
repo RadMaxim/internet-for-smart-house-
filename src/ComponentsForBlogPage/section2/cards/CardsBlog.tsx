@@ -12,9 +12,11 @@ const CardsBlog = ({ img, title, desc }: CardsBlogI) => {
           <img src={img} alt="" />
         </div>
 
-        <Heading lvl={3} color={2} size={"1.5rem"} >{title} </Heading>
+        <Heading lvl={3} color={2} size={"1.5rem"}>
+          {title}{" "}
+        </Heading>
 
-        <Paragraph color={5}  >{desc}</Paragraph>
+        <Paragraph color={2}>{desc}</Paragraph>
 
         <Share />
       </section>

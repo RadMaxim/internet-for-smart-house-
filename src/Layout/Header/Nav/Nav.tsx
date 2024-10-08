@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import { nav } from "../navigate/navigate";
 import classNav from "./css/classNav.module.css";
+import { memo } from "react";
 
-const Nav = () => {
+const Nav = memo(() => {
   return (
     <>
       <div className={classNav.menu_container}>
@@ -18,5 +19,5 @@ const Nav = () => {
       </div>
     </>
   );
-};
+});
 export default Nav;

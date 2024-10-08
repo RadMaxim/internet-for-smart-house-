@@ -24,4 +24,9 @@
 .main .right img {
   width: 24px;
   height: 24px;
+  cursor: pointer;
+  transition: transform 0.7s ease;
+}
+.main .right img:hover {
+  transform: scale(1.2);
 }/*# sourceMappingURL=classShare.module.css.map */

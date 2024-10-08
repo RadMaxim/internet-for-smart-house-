@@ -11,4 +11,12 @@
 }
 .input[type=submit]:hover {
   background-color: #3497ee;
+}
+
+@media (max-width: 768px) {
+  .input[type=submit] {
+    width: 95vw !important;
+    height: 50px !important;
+    margin: auto;
+  }
 }/*# sourceMappingURL=classButton.module.css.map */

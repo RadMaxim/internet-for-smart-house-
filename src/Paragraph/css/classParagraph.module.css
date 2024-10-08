@@ -28,7 +28,7 @@ p {
      -moz-user-select: none;
           user-select: none;
   padding-bottom: 16px !important;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 26px;
 }
 
@@ -46,4 +46,11 @@ p {
 
 .center {
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  p {
+    font-size: 0.9rem;
+    line-height: 23px;
+  }
 }/*# sourceMappingURL=classParagraph.module.css.map */

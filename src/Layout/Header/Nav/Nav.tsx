@@ -5,7 +5,7 @@ import { memo } from "react";
 
 const Nav = memo(() => {
   return (
-    <>
+  
       <div className={classNav.menu_container}>
         <ul className={classNav.ul}>
           {nav.map((val, index) => {
@@ -17,7 +17,7 @@ const Nav = memo(() => {
           })}
         </ul>
       </div>
-    </>
+  
   );
 });
 export default Nav;

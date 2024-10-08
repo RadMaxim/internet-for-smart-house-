@@ -14,3 +14,12 @@ $blue_04: #5a98d0;
     background-color: $blue_04;
   }
 }
+@media (max-width: 768px){
+  .input[type="submit"] {
+    width: 95vw !important;
+    height: 50px !important;
+    margin: auto;
+  }
+
+
+}

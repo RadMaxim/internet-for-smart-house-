@@ -1,5 +1,6 @@
-$sizeColumn: (auto clamp(70%, 940px, 75%) auto);
+$sizeColumn: (auto  940px auto);
 @mixin posIMG($url, $size) {
+  border-radius: 10px;
   background-image: url($url);
   background-position: center;
   background-repeat: no-repeat;
@@ -75,4 +76,72 @@ img {
   background-position: center;
   cursor: pointer;
   opacity: 80%;
+}
+@media (max-width: 768px){
+  $sizeColumn: 95vw;
+
+  .section3 {
+    display: grid;
+    grid-template-columns: $sizeColumn;
+    grid-template-rows: 100%;
+    grid-template-areas: "content";
+    justify-content: center;
+    .section3_container {
+      grid-area: content;
+      display: grid;
+     
+      grid-template-columns: 100%;
+      grid-template-rows: 15% 25% 25% 25%;
+      row-gap: 20px;
+      column-gap: 0;
+      grid-template-areas:
+        "section_header"
+        "section_img" "section_img_card1" "section_img_card2";
+  
+      }
+  }
+  .card_header {
+    grid-area: section_header;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30px 85px;
+    grid-template-areas: "h2" "p";
+    gap: 10px;
+    padding: 10px;
+  }
+  .card_img {
+    grid-area: section_img;
+    background-size: 200% ;
+    padding: 10px ;
+   &:hover{
+    background-size: 250% !important;
+
+   } 
+  }
+  .footer_img1 {
+    width: 100%;
+    padding: 10px;
+    background-size: 100% ;
+    background-position: center ;
+    
+    grid-area: section_img_card1;
+  }
+  .footer_img2 {
+    width: 100%;
+    padding: 10px;
+    background-size: 100% ;
+    background-position: center ;
+    grid-area: section_img_card2;
+  }
+ 
+  .card_img:hover,
+  .footer_img1:hover,
+  .footer_img2:hover {
+    background-size: 140%;
+    background-position: center;
+    cursor: pointer;
+    opacity: 80%;
+  }
+
+
 }

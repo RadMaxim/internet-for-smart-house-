@@ -1,8 +1,9 @@
+import { memo } from "react";
 import Heading from "../../Heading/Heading";
 import Paragraph from "../../Paragraph/Paragraph";
 import classSection3 from "./css/classSection3.module.css";
 
-const Section3 = () => {
+const Section3 = memo(() => {
   return (
     <>
       <section className={classSection3.section3}>
@@ -47,5 +48,5 @@ const Section3 = () => {
       </section>
     </>
   );
-};
+});
 export default Section3;

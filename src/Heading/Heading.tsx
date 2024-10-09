@@ -34,32 +34,26 @@ const Heading = memo(({ lvl, color, size, positionX, children }: Heading) => {
     <>
       <div className={classHeading.mainHeading}>
         {lvl == 1 ? (
-          <>
-            <h1
-              style={{ fontSize: size }}
-              className={`${classHeading[elem.color]} ${classHeading[elem.position]}`}
-            >
-              {children}
-            </h1>
-          </>
+          <h1
+            style={{ fontSize: size }}
+            className={`${classHeading[elem.color]} ${classHeading[elem.position]}`}
+          >
+            {children}
+          </h1>
         ) : lvl == 2 ? (
-          <>
-            <h2
-              style={{ fontSize: size }}
-              className={`${classHeading[elem.color]} ${classHeading[elem.position]}`}
-            >
-              {children}
-            </h2>
-          </>
+          <h2
+            style={{ fontSize: size }}
+            className={`${classHeading[elem.color]} ${classHeading[elem.position]}`}
+          >
+            {children}
+          </h2>
         ) : (
-          <>
-            <h3
-              style={{ fontSize: size }}
-              className={`${classHeading[elem.color]} ${classHeading[elem.position]}`}
-            >
-              {children}
-            </h3>
-          </>
+          <h3
+            style={{ fontSize: size }}
+            className={`${classHeading[elem.color]} ${classHeading[elem.position]}`}
+          >
+            {children}
+          </h3>
         )}
       </div>
     </>

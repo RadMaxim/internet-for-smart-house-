@@ -23,7 +23,7 @@ footer {
       grid-area: top;
       display: grid;
       column-gap: 180px;
-     
+
       margin-top: 91px;
       grid-template-columns: 460px 220px;
       grid-template-rows: 204px;
@@ -99,59 +99,57 @@ footer {
   }
 }
 @media (max-width: 768px) {
-  .center{
+  .center {
     display: none;
   }
   footer {
-   .footer_container{
-    padding: 10px;
-    border-radius: 0px 50px 0px 0px;
-    grid-template-rows: 300px 700px;
-    grid-template-columns: auto;
-    grid-template-areas: "top" "bottom";
-    .top{
-      grid-area: top;
-      margin-top: 10px;
-      grid-template-columns: 95vw;
-      grid-template-rows: 80%  20%;
-      grid-template-areas: "left"  "right";
-      .top_left{
-        grid-area: left;
+    .footer_container {
+      padding: 10px;
+      border-radius: 0px 50px 0px 0px;
+      grid-template-rows: 300px 700px;
+      grid-template-columns: auto;
+      grid-template-areas: "top" "bottom";
+      .top {
+        grid-area: top;
+        margin-top: 10px;
+        grid-template-columns: 95vw;
+        grid-template-rows: 80% 20%;
+        grid-template-areas: "left" "right";
+        .top_left {
+          grid-area: left;
+        }
+        .top_right {
+          grid-area: right;
+        }
       }
-      .top_right{
-        grid-area: right;
-    
-      }
-    }
-    .bottom {
-      grid-area: bottom;
-      justify-content: center;
-      grid-template-columns: 46vw 46vw;
-      row-gap: 10px;      
-      grid-template-rows: 50px 200px 50px 150px 50px 50px 50px 50px 50px;
-      margin-top: 40px;
-      column-gap: 10px;
-      grid-template-areas: "head1 head1" "cont1 cont1" "head2 head3" "cont2 cont3";
-      @for $i from 1 to 4 {
-        .head#{$i} {
-          h3 {
-            color: $white;
-            margin: 0;
-            padding: 0;
+      .bottom {
+        grid-area: bottom;
+        justify-content: center;
+        grid-template-columns: 46vw 46vw;
+        row-gap: 10px;
+        grid-template-rows: 50px 200px 50px 150px 50px 50px 50px 50px 50px;
+        margin-top: 40px;
+        column-gap: 10px;
+        grid-template-areas: "head1 head1" "cont1 cont1" "head2 head3" "cont2 cont3";
+        @for $i from 1 to 4 {
+          .head#{$i} {
+            h3 {
+              color: $white;
+              margin: 0;
+              padding: 0;
+            }
+          }
+        }
+        @for $i from 1 to 4 {
+          .cont#{$i} {
+            grid-area: cont#{$i};
+            p {
+              padding: 0 !important;
+              color: $white !important;
+            }
           }
         }
       }
-      @for $i from 1 to 4 {
-        .cont#{$i} {
-          grid-area: cont#{$i};
-          p {
-            padding: 0 !important;
-            color: $white !important;
-          }
-        }
-      }
     }
-   }
-  
   }
- }
+}

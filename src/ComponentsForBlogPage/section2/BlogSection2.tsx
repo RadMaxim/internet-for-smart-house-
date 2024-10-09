@@ -16,10 +16,10 @@ const BlogSection2 = memo(() => {
         <div className={classBlogSection2.section2_container}>
           <div className={classBlogSection2.section2_container_top}>
             <section className={classBlogSection2.section_1}>
-             <form action="" method="get">
-              <input type="text" />
-              <CiSearch/>
-              </form> 
+              <form action="" method="get">
+                <input type="text" />
+                <CiSearch />
+              </form>
             </section>
 
             <section className={classBlogSection2.section_2}>

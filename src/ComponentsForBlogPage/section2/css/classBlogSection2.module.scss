@@ -1,6 +1,6 @@
 @use "./../../../AllMixin/allMixin.scss";
 
-$Blue_01:#1F3F68;
+$Blue_01: #1f3f68;
 $sizeColumn: (auto 940px auto);
 .section2 {
   display: grid;
@@ -40,10 +40,10 @@ ul {
   margin-top: 32px;
   @include allMixin.posEl(20px);
 }
-form{
+form {
   width: 100%;
   position: relative;
-  svg{
+  svg {
     position: absolute;
     top: 50%;
     left: 24px;
@@ -51,14 +51,14 @@ form{
     width: 24px;
     height: 24px;
     cursor: pointer;
-    fill: #1F3F68;
+    fill: #1f3f68;
     transition: 0.7s;
-    &:hover{
+    &:hover {
       width: 30px;
       height: 30px;
     }
   }
-  input{
+  input {
     width: 100%;
     height: 56px;
     text-indent: 72px;

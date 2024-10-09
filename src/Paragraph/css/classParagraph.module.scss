@@ -40,11 +40,9 @@ p {
 .center {
   text-align: center;
 }
-@media (max-width: 768px){
-
-  p{
+@media (max-width: 768px) {
+  p {
     font-size: 0.9rem;
     line-height: 23px;
   }
-
 }

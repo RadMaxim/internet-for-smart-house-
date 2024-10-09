@@ -9,7 +9,7 @@ const CardSection2 = ({ h3, IMG, desc }: CardSection2I) => {
     <>
       <section className={classCardSection2.card1}>
         <div className={classCardSection2.card1_container}>
-          <div>
+          <div className={classCardSection2.img}>
             <img src={IMG} alt="" />
           </div>
           <Heading lvl={3} color={2} size={"1.25rem"}>

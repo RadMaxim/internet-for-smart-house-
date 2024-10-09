@@ -5,19 +5,17 @@ import { memo } from "react";
 
 const Nav = memo(() => {
   return (
-  
-      <div className={classNav.menu_container}>
-        <ul className={classNav.ul}>
-          {nav.map((val, index) => {
-            return (
-              <li key={index} className={classNav.li}>
-                <Link to={val.link}>{val.name}</Link>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
-  
+    <div className={classNav.menu_container}>
+      <ul className={classNav.ul}>
+        {nav.map((val, index) => {
+          return (
+            <li key={index} className={classNav.li}>
+              <Link to={val.link}>{val.name}</Link>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
   );
 });
 export default Nav;

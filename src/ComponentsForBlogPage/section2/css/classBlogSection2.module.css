@@ -50,7 +50,7 @@ form svg {
   width: 24px;
   height: 24px;
   cursor: pointer;
-  fill: #1F3F68;
+  fill: #1f3f68;
   transition: 0.7s;
 }
 form svg:hover {
@@ -62,4 +62,4 @@ form input {
   height: 56px;
   text-indent: 72px;
   font-size: 1.5rem;
-}/*# sourceMappingURL=classBlogSection2.module.css.map */
+} /*# sourceMappingURL=classBlogSection2.module.css.map */

@@ -32,8 +32,6 @@ const Form: React.FC = () => {
     console.log("err");
     console.log(request.onupgradeneeded);
     console.log(data);
-    
-   
   };
   return (
     <>

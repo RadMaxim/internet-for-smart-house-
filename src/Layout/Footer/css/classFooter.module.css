@@ -17,7 +17,7 @@ footer .footer_container .top {
   grid-area: top;
   display: grid;
   -moz-column-gap: 180px;
-       column-gap: 180px;
+  column-gap: 180px;
   margin-top: 91px;
   grid-template-columns: 460px 220px;
   grid-template-rows: 204px;
@@ -52,7 +52,7 @@ footer .footer_container .bottom {
   grid-area: bottom;
   display: grid;
   -moz-column-gap: 77px;
-       column-gap: 77px;
+  column-gap: 77px;
   grid-template-columns: 300px 163px 97px;
   grid-template-rows: 96px auto 154px;
   margin-top: 98px;
@@ -166,7 +166,7 @@ footer .footer_container .bottom .cont3 p {
     grid-template-rows: 50px 200px 50px 150px 50px 50px 50px 50px 50px;
     margin-top: 40px;
     -moz-column-gap: 10px;
-         column-gap: 10px;
+    column-gap: 10px;
     grid-template-areas: "head1 head1" "cont1 cont1" "head2 head3" "cont2 cont3";
   }
   footer .footer_container .bottom .head1 h3 {
@@ -205,4 +205,4 @@ footer .footer_container .bottom .cont3 p {
     padding: 0 !important;
     color: #ffffff !important;
   }
-}/*# sourceMappingURL=classFooter.module.css.map */
+} /*# sourceMappingURL=classFooter.module.css.map */

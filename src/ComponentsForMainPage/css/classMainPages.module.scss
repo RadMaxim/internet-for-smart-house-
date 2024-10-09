@@ -24,7 +24,7 @@ $gapRow: 192px;
 }
 @media (max-width: 768px) {
   $gapRow: 50px;
-  $rowSize: (700px 1162px 1118px 1549px);
+  $rowSize: (700px 1100px 1118px 1549px);
   .main {
     row-gap: $gapRow;
     grid-template-rows: $rowSize;

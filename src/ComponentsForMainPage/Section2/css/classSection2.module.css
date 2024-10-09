@@ -10,7 +10,7 @@
   grid-template-columns: auto 380px;
   grid-template-rows: repeat(25%, 4);
   -moz-column-gap: 100px;
-  column-gap: 100px;
+       column-gap: 100px;
   grid-template-areas: "card0 card1" "card2 card1" "card2 card3" ".     card3";
 }
 .section2 .section2_container .card0 {
@@ -30,7 +30,7 @@
   align-items: center;
 }
 .section2 .section2_container section:nth-of-type(4) {
-  margin-top: 100px;
+  margin-top: 0px !important;
   grid-area: card3;
 }
 .section2 .section2_container section:nth-of-type(n + 2) {
@@ -55,9 +55,9 @@
   .section2 .section2_container {
     grid-area: content;
     grid-template-columns: 100%;
-    grid-template-rows: 12% 25% 25% 25%;
+    grid-template-rows: 12% 29% 29% 29%;
     -moz-column-gap: 0px;
-    column-gap: 0px;
+         column-gap: 0px;
     justify-items: center;
     grid-template-areas: "header" "content1" "content2" "content3";
   }
@@ -89,4 +89,4 @@
     height: 525px;
     background-color: white;
   }
-} /*# sourceMappingURL=classSection2.module.css.map */
+}/*# sourceMappingURL=classSection2.module.css.map */

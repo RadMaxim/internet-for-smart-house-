@@ -31,6 +31,6 @@
 @media (max-width: 768px) {
   .main {
     row-gap: 50px;
-    grid-template-rows: 700px 1162px 1118px 1549px;
+    grid-template-rows: 700px 1100px 1118px 1549px;
   }
-} /*# sourceMappingURL=classMainPages.module.css.map */
+}/*# sourceMappingURL=classMainPages.module.css.map */

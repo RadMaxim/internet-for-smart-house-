@@ -22,10 +22,12 @@ const corsOptions = {
   allowedHeaders: "Content-Type",
   credentials: true,
 };
-
+console.log("Server is start....");
 app.use(cors(corsOptions));
 app.use(bodyParser.json());
 app.post("/data/get", async (req, res) => {
+  console.log("data");
+  
   const data = req.body;
   console.log(data);
   await notion.pages.create({

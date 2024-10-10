@@ -6,6 +6,7 @@ import { memo, useRef } from "react";
 import useTheme from "../../MyHooks/ThemeHooks";
 
 const Header = memo(() => {
+  // let {results} = (await(await fetch('http://localhost:3002/api/stocks')).json())
   const refInput = useRef<HTMLInputElement>(null);
   const { setTheme } = useTheme();
   const toggle = () => {

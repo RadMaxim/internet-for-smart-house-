@@ -33,7 +33,7 @@ p {
     grid-template-rows: 25% 50% 10%;
     row-gap: 10px;
     -moz-column-gap: 10px;
-         column-gap: 10px;
+    column-gap: 10px;
     grid-template-areas: " img header" "img desc" "img link";
   }
   .card1_container div:nth-of-type(1) {
@@ -56,4 +56,4 @@ p {
     display: flex;
     justify-content: start;
   }
-}/*# sourceMappingURL=classCardSection2.module.css.map */
+} /*# sourceMappingURL=classCardSection2.module.css.map */

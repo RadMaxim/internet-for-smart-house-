@@ -19,19 +19,17 @@ const Form: React.FC = () => {
     resolver: yupResolver(schema),
   });
 
-  const send: SubmitHandler<FormData> = (data) => {
-    const idb = window.indexedDB;
-    if (!idb) {
-      throw new Error("mistake of idb");
-    }
-    const request = idb.open(" test-db", 1);
-    request.onerror = function (event) {
-      console.error(" Произошла ошибка IndexedDB");
-      console.error(event);
-    };
-    console.log("err");
-    console.log(request.onupgradeneeded);
-    console.log(data);
+  const send: SubmitHandler<FormData> = async (data) => {
+    const response = await fetch("http://localhost:3001/data/get", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+    const res_data = await response.json();
+    console.log("worker", res_data);
+    console.log("worker");
   };
   return (
     <>

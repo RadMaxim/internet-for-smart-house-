@@ -1,0 +1,12 @@
+  [build]
+ publish = "dist" # Директория с вашим React-приложением
+  
+  [functions]
+  directory = "functions" 
+[[redirects]]
+   from = "/* /data/get" 
+   to = "/.netlify/functions/server" 
+   status = 200 
+   force = true
+  
+

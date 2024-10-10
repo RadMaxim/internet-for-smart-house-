@@ -20,7 +20,7 @@ const Form: React.FC = () => {
   });
 
   const send: SubmitHandler<FormData> = async (data) => {
-    const response = await fetch("http://localhost:3001/data/get", {
+    const response = await fetch("https://smarthouseeee.netlify.app/data/get", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

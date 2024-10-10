@@ -17,7 +17,7 @@ const notion = new Client({
 const app = exp();
 const PORT = 3001;
 const corsOptions = {
-  origin: "http://localhost:5173",
+  origin: "https://smarthouseeee.netlify.app",
   methods: "GET, POST, PUT, DELETE",
   allowedHeaders: "Content-Type",
   credentials: true,
@@ -60,9 +60,7 @@ app.post("/data/get", async (req, res) => {
       },
     },
   });
-  // notion.getPage(process.env.NOTION_DATABASE_ID) // Получить страницу по ID
-  //  .then(page => console.log(page))
-  //  .catch(err => console.error(err));
+
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.send("Data received successfully");
 });

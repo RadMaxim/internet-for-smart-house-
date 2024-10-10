@@ -11,4 +11,16 @@
   grid-area: content;
   background-color: rgba(255, 0, 0, 0.305);
   z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .section3 {
+    justify-content: center;
+    grid-template-columns: 95vw;
+    grid-template-areas: "content";
+  }
+  .section3 .section3_container {
+    grid-area: content;
+    z-index: 1;
+  }
 } /*# sourceMappingURL=classContactsUs3.module.css.map */

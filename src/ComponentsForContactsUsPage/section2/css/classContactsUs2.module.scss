@@ -1,5 +1,9 @@
 @use "./../../../AllMixin/allMixin.scss";
-
+@mixin posElem() {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
 $sizeColumn: (auto 940px auto);
 h3,
 p {
@@ -40,5 +44,50 @@ address {
   }
   & > div:nth-of-type(4) {
     height: 122px;
+  }
+}
+@media (max-width: 768px) {
+  .section2 {
+    grid-template-columns: 95vw;
+    grid-template-areas: "content";
+    justify-content: center;
+
+    .section2_container {
+      grid-template-columns: 95vw;
+      grid-template-rows: 50% 50%;
+      grid-template-areas: "contacts" "form";
+    }
+  }
+  form {
+    grid-area: form;
+  }
+  address {
+    grid-area: contacts;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+    & > * {
+      width: 100%;
+      padding: 0px;
+    }
+    & > div:nth-of-type(1) {
+      margin-top: 10px !important;
+      height: 100%;
+      width: 100%;
+    }
+    & > div:nth-of-type(2) {
+      height: 107px;
+      padding: 0;
+      @include posElem();
+    }
+    & > div:nth-of-type(3) {
+      height: 122px;
+      @include posElem();
+    }
+    & > div:nth-of-type(4) {
+      height: 122px;
+      @include posElem();
+    }
   }
 }

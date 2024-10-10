@@ -45,3 +45,17 @@ input[type="email"] {
 input:invalid {
   border: 1px solid red;
 }
+@media (max-width: 768px) {
+  form {
+    margin-top: 70px;
+    width: 95vw !important;
+    fieldset {
+      box-shadow: none;
+
+      legend {
+        position: absolute;
+        top: 10px;
+      }
+    }
+  }
+}

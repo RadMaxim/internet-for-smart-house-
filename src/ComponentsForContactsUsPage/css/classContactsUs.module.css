@@ -7,7 +7,7 @@
 .main {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 380px 800px 480px 869px;
+  grid-template-rows: 380px 1100px 480px 869px;
   row-gap: 57px;
   grid-template-areas: "section1" "section2" "section3" "section4";
 }

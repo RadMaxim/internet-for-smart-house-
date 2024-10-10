@@ -49,4 +49,18 @@ input[type="email"] {
 
 input:invalid {
   border: 1px solid red;
+}
+
+@media (max-width: 768px) {
+  form {
+    margin-top: 70px;
+    width: 95vw !important;
+  }
+  form fieldset {
+    box-shadow: none;
+  }
+  form fieldset legend {
+    position: absolute;
+    top: 10px;
+  }
 } /*# sourceMappingURL=classForm.module.css.map */

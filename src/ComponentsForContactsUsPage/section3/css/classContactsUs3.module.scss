@@ -15,3 +15,14 @@ $sizeColumn: (auto 940px auto);
     z-index: 1;
   }
 }
+@media (max-width: 768px) {
+  .section3 {
+    justify-content: center;
+    grid-template-columns: 95vw;
+    grid-template-areas: "content";
+    .section3_container {
+      grid-area: content;
+      z-index: 1;
+    }
+  }
+}

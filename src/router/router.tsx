@@ -21,11 +21,9 @@ const routers = [
   {
     path: "/blogpage",
     element: (
-  
       <HelperLoaderLayoutComponent>
         <BlogPages />
       </HelperLoaderLayoutComponent>
-     
     ),
     errorElement: <div>ErrorOfMain</div>,
   },

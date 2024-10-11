@@ -25,4 +25,5 @@ export interface CardsBlogI {
   img: string;
   title: string;
   desc: string;
+  img_test: string | undefined;
 }

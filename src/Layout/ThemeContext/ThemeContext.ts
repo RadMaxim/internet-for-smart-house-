@@ -35,12 +35,10 @@ export interface PixabayResponse {
   totalHits: number;
   hits: ImageHit[]; // Массив изображений
 }
-export interface Array_img{
-  array_img:ImageHit[]|null;
-  set_array_img:React.Dispatch<React.SetStateAction<ImageHit[]|null>>
+export interface Array_img {
+  array_img: ImageHit[] | null;
+  set_array_img: React.Dispatch<React.SetStateAction<ImageHit[] | null>>;
 }
 
-
-
 export const Theme = createContext<Theme | null>(null);
-export const PixabayResponse = createContext<Array_img|null>(null)
+export const PixabayResponse = createContext<Array_img | null>(null);

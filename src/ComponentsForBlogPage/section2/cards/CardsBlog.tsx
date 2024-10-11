@@ -4,12 +4,12 @@ import Share from "../../../Share/Share";
 import Heading from "../../../Heading/Heading";
 import Paragraph from "../../../Paragraph/Paragraph";
 
-const CardsBlog = ({ img, title, desc }: CardsBlogI) => {
+const CardsBlog = ({ title, desc, img_test }: CardsBlogI) => {
   return (
     <>
       <section className={classCardsBlog.section}>
         <div>
-          <img src={img} alt="" />
+          <img src={img_test} alt="" />
         </div>
 
         <Heading lvl={3} color={2} size={"1.5rem"}>

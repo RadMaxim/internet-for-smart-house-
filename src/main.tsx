@@ -8,8 +8,6 @@ import { route } from "./router/router.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-   
     <RouterProvider router={route} />
- 
   </StrictMode>,
 );

@@ -9,3 +9,30 @@
     margin: 0 !important;
   }
 }
+@media (max-width: 768px) {
+  .section {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 200px 50px 120px 60px;
+    grid-template-areas: "img" "head" "desc" "share";
+    row-gap: 10px;
+    p {
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+    div:nth-child(1) {
+      height: 100%;
+      grid-area: img;
+    }
+    div:nth-child(2) {
+      grid-area: head;
+    }
+    div:nth-child(3) {
+      grid-area: desc;
+    }
+    div:nth-child(4) {
+      grid-area: share;
+      margin-top: -30px;
+    }
+  }
+}

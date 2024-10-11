@@ -3,6 +3,7 @@ import MainLayout from "../Layout/MainLayout";
 import MainPages from "../ComponentsForMainPage/MainPages";
 import { lazy } from "react";
 import HelperLoaderLayoutComponent from "./HelperLoaderLayoutComponent/HelperLoaderLayoutComponent";
+
 const BlogPages = lazy(() => import("./../ComponentsForBlogPage/BlogPage"));
 const Contacts_Us = lazy(
   () => import("./../ComponentsForContactsUsPage/ContactsUs"),
@@ -20,9 +21,11 @@ const routers = [
   {
     path: "/blogpage",
     element: (
+  
       <HelperLoaderLayoutComponent>
         <BlogPages />
       </HelperLoaderLayoutComponent>
+     
     ),
     errorElement: <div>ErrorOfMain</div>,
   },

@@ -7,19 +7,18 @@ import Heading from "../../Heading/Heading";
 import Paragraph from "../../Paragraph/Paragraph";
 import Share from "../../Share/Share";
 import { memo } from "react";
-import { CiSearch } from "react-icons/ci";
-// import { cards } from "../section3/cardsSection3";
+import FormForArticle from "./FormForArticle/FormForArticle";
+
+
 const BlogSection2 = memo(() => {
+  
   return (
     <>
       <section className={classBlogSection2.section2}>
         <div className={classBlogSection2.section2_container}>
           <div className={classBlogSection2.section2_container_top}>
             <section className={classBlogSection2.section_1}>
-              <form action="" method="get">
-                <input type="text" />
-                <CiSearch />
-              </form>
+             <FormForArticle/>
             </section>
 
             <section className={classBlogSection2.section_2}>

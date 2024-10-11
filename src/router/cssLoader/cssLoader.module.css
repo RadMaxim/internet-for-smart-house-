@@ -8,12 +8,10 @@
 }
 
 @keyframes loader {
-  0%,
-  100% {
+  0%, 100% {
     transform: scale(1);
   }
-  30%,
-  60% {
+  30%, 60% {
     transform: scale(1.5);
   }
-} /*# sourceMappingURL=cssLoader.module.css.map */
+}/*# sourceMappingURL=cssLoader.module.css.map */

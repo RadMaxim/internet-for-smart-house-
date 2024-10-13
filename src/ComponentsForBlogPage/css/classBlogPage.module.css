@@ -7,7 +7,7 @@
 .main {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 380px 1158px 1261px 869px;
+  grid-template-rows: 380px 1158px 1200px 869px;
   row-gap: 56px;
   grid-template-areas: "section1" "section2" "section3" "section4";
 }
@@ -26,4 +26,4 @@
 
 .section4 {
   grid-area: section4;
-} /*# sourceMappingURL=classBlogPage.module.css.map */
+}/*# sourceMappingURL=classBlogPage.module.css.map */

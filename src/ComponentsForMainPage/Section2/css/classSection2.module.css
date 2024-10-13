@@ -10,7 +10,7 @@
   grid-template-columns: auto 380px;
   grid-template-rows: repeat(25%, 4);
   -moz-column-gap: 100px;
-  column-gap: 100px;
+       column-gap: 100px;
   grid-template-areas: "card0 card1" "card2 card1" "card2 card3" ".     card3";
 }
 .section2 .section2_container .card0 {
@@ -57,7 +57,7 @@
     grid-template-columns: 100%;
     grid-template-rows: 12% 29% 29% 29%;
     -moz-column-gap: 0px;
-    column-gap: 0px;
+         column-gap: 0px;
     justify-items: center;
     grid-template-areas: "header" "content1" "content2" "content3";
   }
@@ -89,4 +89,4 @@
     height: 525px;
     background-color: white;
   }
-} /*# sourceMappingURL=classSection2.module.css.map */
+}/*# sourceMappingURL=classSection2.module.css.map */

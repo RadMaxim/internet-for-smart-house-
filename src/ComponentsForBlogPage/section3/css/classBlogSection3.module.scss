@@ -9,15 +9,37 @@ $sizeColumn: (auto 940px auto);
   .section3_container {
     grid-area: content;
     margin-top: 56px;
-    .paginator {
-      margin-top: 56px;
-      @include allMixin.posElem(space-between);
-    }
+   
+
+   
   }
 }
 .ul {
   width: 100%;
   @include allMixin.posEl(32px);
   align-items: flex-start;
+  justify-content: flex-start;
   flex-direction: column;
+  
+}
+@media (max-width: 768px){
+
+  $sizeColumn:  95vw ;
+  .section3 {
+    grid-template-columns: $sizeColumn;
+    grid-template-areas: "content";
+    justify-content: center;
+    .section3_container{
+     
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    .ul{
+      overflow-y: scroll;
+    }
+   
+  }
+  
+
 }

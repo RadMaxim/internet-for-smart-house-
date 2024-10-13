@@ -20,7 +20,10 @@ const receiveData = async (search: string): Promise<ImageHit[] | null> => {
 
   return step2?.hits;
 };
+
 const FormForArticle = () => {
+ 
+  
   const { set_array_img } = SearchIMG();
   const [state, setState] = useState<string>("education");
   const queryClient = useQueryClient();

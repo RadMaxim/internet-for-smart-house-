@@ -39,9 +39,7 @@ header .header_container {
   border-radius: 2px;
   position: absolute;
   left: 0;
-  transition:
-    transform 0.5s ease,
-    opacity 0.5s ease;
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 .burger_menu span:nth-child(1) {
@@ -95,7 +93,7 @@ header .header_container {
   justify-content: center;
   align-items: center;
 }
-.theme input[type="checkbox"] {
+.theme input[type=checkbox] {
   display: none;
   position: absolute;
 }
@@ -106,6 +104,6 @@ header .header_container {
 .theme label:nth-of-type(2) {
   transform: translateX(-30%);
 }
-.theme input[type="checkbox"]:checked ~ label {
+.theme input[type=checkbox]:checked ~ label {
   transform: translateX(-100%);
-} /*# sourceMappingURL=classHeader.module.css.map */
+}/*# sourceMappingURL=classHeader.module.css.map */

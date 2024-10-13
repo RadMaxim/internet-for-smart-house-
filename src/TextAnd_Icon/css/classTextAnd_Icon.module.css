@@ -47,8 +47,7 @@ span svg {
 }
 
 @keyframes arrowR {
-  0%,
-  100% {
+  0%, 100% {
     transform: translateX(0);
   }
   50% {
@@ -56,8 +55,7 @@ span svg {
   }
 }
 @keyframes arrowL {
-  0%,
-  100% {
+  0%, 100% {
     transform: translateX(0);
   }
   50% {
@@ -91,4 +89,4 @@ span svg {
 
 .red {
   color: red;
-} /*# sourceMappingURL=classTextAnd_Icon.module.css.map */
+}/*# sourceMappingURL=classTextAnd_Icon.module.css.map */

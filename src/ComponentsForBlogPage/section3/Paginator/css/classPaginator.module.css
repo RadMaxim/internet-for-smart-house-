@@ -1,1 +1,7 @@
-/*# sourceMappingURL=classPaginator.module.css.map */
+.paginator {
+  margin-top: 30px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}/*# sourceMappingURL=classPaginator.module.css.map */

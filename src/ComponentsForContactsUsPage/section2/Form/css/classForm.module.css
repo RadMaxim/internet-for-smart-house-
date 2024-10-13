@@ -39,8 +39,8 @@ form fieldset legend {
   background-color: none;
 }
 
-input[type="text"],
-input[type="email"] {
+input[type=text],
+input[type=email] {
   height: 72px;
   width: 100%;
   border-radius: 10px;
@@ -63,4 +63,4 @@ input:invalid {
     position: absolute;
     top: 10px;
   }
-} /*# sourceMappingURL=classForm.module.css.map */
+}/*# sourceMappingURL=classForm.module.css.map */

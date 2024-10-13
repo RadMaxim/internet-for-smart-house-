@@ -39,3 +39,38 @@ h3,
 p {
   @include mp0();
 }
+@media (max-width: 768px){
+
+  .li {
+   
+    grid-template-columns: 100%;
+    grid-template-rows: 230px 50px 100px 30px;
+    column-gap: 0px;
+    row-gap: 20px;
+    grid-template-areas: "img" "title" "desc" "wait";
+  }
+  .img {
+    grid-area: img;
+  }
+  .head {
+    grid-area: title;
+    h3 {
+      line-height: 28px;
+    }
+  }
+  .desc {
+    grid-area: desc;
+  }
+  .wait {
+    grid-area: wait;
+  
+  
+  }
+  h3,
+  p {
+    @include mp0();
+  }
+
+
+
+}

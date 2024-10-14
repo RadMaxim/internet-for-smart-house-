@@ -4,7 +4,7 @@ footer {
   width: 100%;
   height: 869px;
 }
-footer .footer_container {
+footer .light, footer .dark {
   height: 100%;
   background-color: #316099;
   border-radius: 0px 200px 0px 0px;
@@ -13,7 +13,7 @@ footer .footer_container {
   grid-template-columns: auto 940px auto;
   grid-template-areas: ". top ." ". center ." ". bottom .";
 }
-footer .footer_container .top {
+footer .light .top, footer .dark .top {
   grid-area: top;
   display: grid;
   -moz-column-gap: 180px;
@@ -23,32 +23,32 @@ footer .footer_container .top {
   grid-template-rows: 204px;
   grid-template-areas: "top_left top_right";
 }
-footer .footer_container .top .top_left {
+footer .light .top .top_left, footer .dark .top .top_left {
   grid-area: top_left;
 }
-footer .footer_container .top .top_left h2 {
+footer .light .top .top_left h2, footer .dark .top .top_left h2 {
   margin-bottom: 32px;
   max-width: 400px;
   color: white !important;
 }
-footer .footer_container .top .top_left p {
+footer .light .top .top_left p, footer .dark .top .top_left p {
   max-width: 460px;
   color: white;
 }
-footer .footer_container .top .top_right {
+footer .light .top .top_right, footer .dark .top .top_right {
   grid-area: top_right;
   display: grid;
   align-content: center;
 }
-footer .footer_container .center {
+footer .light .center, footer .dark .center {
   grid-area: center;
   opacity: 40%;
 }
-footer .footer_container .center .line_container {
+footer .light .center .line_container, footer .dark .center .line_container {
   height: 1px;
   border: 1px solid white;
 }
-footer .footer_container .bottom {
+footer .light .bottom, footer .dark .bottom {
   grid-area: bottom;
   display: grid;
   -moz-column-gap: 77px;
@@ -58,62 +58,65 @@ footer .footer_container .bottom {
   margin-top: 98px;
   grid-template-areas: "head1 head2 head3" "cont1 cont2 cont3" "bottoms bottoms bottoms";
 }
-footer .footer_container .bottom .head1 {
+footer .light .bottom .head1, footer .dark .bottom .head1 {
   grid-area: head1;
   display: flex;
   flex-direction: column;
   gap: 0px;
   justify-content: flex-start;
 }
-footer .footer_container .bottom .head1 h3 {
+footer .light .bottom .head1 h3, footer .dark .bottom .head1 h3 {
   color: #ffffff;
   margin: 0;
   padding: 0;
 }
-footer .footer_container .bottom .head2 {
+footer .light .bottom .head2, footer .dark .bottom .head2 {
   grid-area: head2;
   display: flex;
   flex-direction: column;
   gap: 0px;
   justify-content: flex-start;
 }
-footer .footer_container .bottom .head2 h3 {
+footer .light .bottom .head2 h3, footer .dark .bottom .head2 h3 {
   color: #ffffff;
   margin: 0;
   padding: 0;
 }
-footer .footer_container .bottom .head3 {
+footer .light .bottom .head3, footer .dark .bottom .head3 {
   grid-area: head3;
   display: flex;
   flex-direction: column;
   gap: 0px;
   justify-content: flex-start;
 }
-footer .footer_container .bottom .head3 h3 {
+footer .light .bottom .head3 h3, footer .dark .bottom .head3 h3 {
   color: #ffffff;
   margin: 0;
   padding: 0;
 }
-footer .footer_container .bottom .cont1 {
+footer .light .bottom .cont1, footer .dark .bottom .cont1 {
   grid-area: cont1;
 }
-footer .footer_container .bottom .cont1 p {
+footer .light .bottom .cont1 p, footer .dark .bottom .cont1 p {
   padding: 0 !important;
   color: #ffffff !important;
 }
-footer .footer_container .bottom .cont2 {
+footer .light .bottom .cont2, footer .dark .bottom .cont2 {
   grid-area: cont2;
 }
-footer .footer_container .bottom .cont2 p {
+footer .light .bottom .cont2 p, footer .dark .bottom .cont2 p {
   padding: 0 !important;
   color: #ffffff !important;
 }
-footer .footer_container .bottom .cont3 {
+footer .light .bottom .cont3, footer .dark .bottom .cont3 {
   grid-area: cont3;
 }
-footer .footer_container .bottom .cont3 p {
+footer .light .bottom .cont3 p, footer .dark .bottom .cont3 p {
   padding: 0 !important;
   color: #ffffff !important;
+}
+footer .dark {
+  background-color: var(--color_darkBl);
 }
 
 .cont1 {
@@ -138,27 +141,27 @@ footer .footer_container .bottom .cont3 p {
   .center {
     display: none;
   }
-  footer .footer_container {
+  footer .light, footer .dark {
     padding: 10px;
     border-radius: 0px 50px 0px 0px;
     grid-template-rows: 300px 700px;
     grid-template-columns: auto;
     grid-template-areas: "top" "bottom";
   }
-  footer .footer_container .top {
+  footer .light .top, footer .dark .top {
     grid-area: top;
     margin-top: 10px;
     grid-template-columns: 95vw;
     grid-template-rows: 80% 20%;
     grid-template-areas: "left" "right";
   }
-  footer .footer_container .top .top_left {
+  footer .light .top .top_left, footer .dark .top .top_left {
     grid-area: left;
   }
-  footer .footer_container .top .top_right {
+  footer .light .top .top_right, footer .dark .top .top_right {
     grid-area: right;
   }
-  footer .footer_container .bottom {
+  footer .light .bottom, footer .dark .bottom {
     grid-area: bottom;
     justify-content: center;
     grid-template-columns: 46vw 46vw;
@@ -169,39 +172,39 @@ footer .footer_container .bottom .cont3 p {
          column-gap: 10px;
     grid-template-areas: "head1 head1" "cont1 cont1" "head2 head3" "cont2 cont3";
   }
-  footer .footer_container .bottom .head1 h3 {
+  footer .light .bottom .head1 h3, footer .dark .bottom .head1 h3 {
     color: #ffffff;
     margin: 0;
     padding: 0;
   }
-  footer .footer_container .bottom .head2 h3 {
+  footer .light .bottom .head2 h3, footer .dark .bottom .head2 h3 {
     color: #ffffff;
     margin: 0;
     padding: 0;
   }
-  footer .footer_container .bottom .head3 h3 {
+  footer .light .bottom .head3 h3, footer .dark .bottom .head3 h3 {
     color: #ffffff;
     margin: 0;
     padding: 0;
   }
-  footer .footer_container .bottom .cont1 {
+  footer .light .bottom .cont1, footer .dark .bottom .cont1 {
     grid-area: cont1;
   }
-  footer .footer_container .bottom .cont1 p {
+  footer .light .bottom .cont1 p, footer .dark .bottom .cont1 p {
     padding: 0 !important;
     color: #ffffff !important;
   }
-  footer .footer_container .bottom .cont2 {
+  footer .light .bottom .cont2, footer .dark .bottom .cont2 {
     grid-area: cont2;
   }
-  footer .footer_container .bottom .cont2 p {
+  footer .light .bottom .cont2 p, footer .dark .bottom .cont2 p {
     padding: 0 !important;
     color: #ffffff !important;
   }
-  footer .footer_container .bottom .cont3 {
+  footer .light .bottom .cont3, footer .dark .bottom .cont3 {
     grid-area: cont3;
   }
-  footer .footer_container .bottom .cont3 p {
+  footer .light .bottom .cont3 p, footer .dark .bottom .cont3 p {
     padding: 0 !important;
     color: #ffffff !important;
   }

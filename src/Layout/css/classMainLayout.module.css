@@ -1,21 +1,16 @@
+:root {
+  --color_lightOr:#FBE8A6;
+  --color_darkOr:#F4976C;
+  --color_darkBl:#303C6C;
+  --color_lightBl1:#B4DFE5;
+  --color_lightBl2:#D2FDFF;
+}
+
 .light {
   transition: background 0.5s ease;
 }
-.light p,
-.light h1,
-.light h2,
-.light h3 {
-  transition: color 0.5s ease;
-}
 
 .dark {
-  background: rgba(0, 0, 0, 0.614);
+  background: var(--color_lightOr);
   transition: background 0.5s ease;
-}
-.dark p,
-.dark h1,
-.dark h2,
-.dark h3 {
-  color: white;
-  transition: color 0.5s ease;
 }/*# sourceMappingURL=classMainLayout.module.css.map */

@@ -4,12 +4,14 @@ import Heading from "../../Heading/Heading";
 import Paragraph from "../../Paragraph/Paragraph";
 import TextAnd_Icon from "../../TextAnd_Icon/TextAnd_Icon";
 import classFooter from "./css/classFooter.module.css";
+import useTheme from "../../MyHooks/ThemeHooks";
 
 const Footer = memo(() => {
+  const {theme} = useTheme()
   return (
     <>
       <footer>
-        <div className={classFooter.footer_container}>
+        <div className={classFooter[theme]}>
           <div className={classFooter.top}>
             <div className={classFooter.top_left}>
               <Heading color={1} lvl={2} size={"2.25rem"}>

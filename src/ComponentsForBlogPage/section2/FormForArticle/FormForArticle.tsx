@@ -27,7 +27,7 @@ const FormForArticle = () => {
   const { set_array_img } = SearchIMG();
   const [state, setState] = useState<string>("education");
   const queryClient = useQueryClient();
-  const { isLoading, isFetched } = useQuery(
+  const { isFetched } = useQuery(
     ["array_img", state],
     () => receiveData(state),
     {
@@ -43,7 +43,6 @@ const FormForArticle = () => {
       cacheTime: 60000,
     },
   );
-  console.log("isFL", isFetched, isLoading);
 
   useEffect(() => {
     queryClient.invalidateQueries(["array_img", state]);

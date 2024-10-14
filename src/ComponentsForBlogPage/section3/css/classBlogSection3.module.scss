@@ -8,10 +8,9 @@ $sizeColumn: (auto 940px auto);
   grid-template-areas: ". content .";
   .section3_container {
     grid-area: content;
-    margin-top: 56px;
-   
-
-   
+    margin-bottom: 50px;
+    margin-top: -50px;
+    
   }
 }
 .ul {
@@ -29,8 +28,9 @@ $sizeColumn: (auto 940px auto);
     grid-template-columns: $sizeColumn;
     grid-template-areas: "content";
     justify-content: center;
+    margin: 0;
     .section3_container{
-     
+     margin-top: 56px;
       display: flex;
       flex-direction: column;
       justify-content: space-around;

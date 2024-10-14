@@ -1,3 +1,4 @@
+import { memo } from "react";
 import Button from "../../button/Button";
 import Heading from "../../Heading/Heading";
 import Paragraph from "../../Paragraph/Paragraph";
@@ -13,11 +14,13 @@ import {
   img11,
   img12,
 } from "./getImgs";
+import useTheme from "../../MyHooks/ThemeHooks";
 
-const Section1 = () => {
+const Section1 = memo(() => {
+  const {theme} = useTheme();
   return (
     <>
-      <section className={classSection1.section1}>
+      <section className={classSection1[theme]}>
         <div className={classSection1.section1_container}>
           <div className={classSection1.left}>
             <Heading lvl={1} size={"3.3rem"} color={2}>
@@ -63,5 +66,5 @@ const Section1 = () => {
       </section>
     </>
   );
-};
+});
 export default Section1;

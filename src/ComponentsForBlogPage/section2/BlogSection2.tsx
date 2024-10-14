@@ -12,7 +12,7 @@ import SearchIMG from "../../MyHooks/SearchIMG";
 const BlogSection2 = memo(() => {
   const { array_img } = SearchIMG();
   const slice_array_img = array_img?.slice(0, 4);
-
+  
   return (
     <>
       <section className={classBlogSection2.section2}>

@@ -6,7 +6,8 @@
 }
 .section3 .section3_container {
   grid-area: content;
-  margin-top: 56px;
+  margin-bottom: 50px;
+  margin-top: -50px;
 }
 
 .ul {
@@ -25,8 +26,10 @@
     grid-template-columns: 95vw;
     grid-template-areas: "content";
     justify-content: center;
+    margin: 0;
   }
   .section3 .section3_container {
+    margin-top: 56px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;

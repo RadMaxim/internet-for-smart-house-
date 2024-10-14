@@ -1,6 +1,7 @@
-.section1 {
+.light, .dark {
   .section1_container {
     margin-top: 130px;
+    transition: 0.7s ease;
     background: linear-gradient(253.6deg, #98d0fc 2.46%, #3481d7 93.24%);
     height: 250px;
     display: flex;
@@ -11,14 +12,13 @@
       height: 150px;
     }
   }
-  // @media (max-width: 768px) {
-  //   .section1_container {
-  //    height: auto; /* Убираем фиксированную высоту */
-  //    padding: 20px; /* Добавляем отступы для удобства */
-  //    .heading {
-  //     width: 100%; /* Занимает всю ширину экрана */
-  //     height: auto; /* Автоматическая высота */
-  //    }
-  //   }
-  //  }
+}
+.dark{
+  .section1_container {
+    
+    background: linear-gradient(253.6deg, var(--color_lightBl1) 2.46%, var(--color_darkOr));
+   
+  }
+
+
 }

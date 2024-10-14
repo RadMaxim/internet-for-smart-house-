@@ -5,9 +5,9 @@ import classBlogSection1 from "./css/classBlogSection1.module.css";
 import useTheme from "../../MyHooks/ThemeHooks";
 
 const BlogSection1 = memo(() => {
-  const {theme} = useTheme()
+  const { theme } = useTheme();
   console.log(theme);
-  
+
   return (
     <>
       <section className={classBlogSection1[theme]}>

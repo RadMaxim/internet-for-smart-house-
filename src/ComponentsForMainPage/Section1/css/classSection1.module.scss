@@ -5,11 +5,11 @@
 }
 @mixin posEl() {
   display: flex;
-
 }
 $sizeColumn: (auto clamp(70%, 940px, 75%) auto);
-.light, .dark{
-  transition: 0.7s  background ease;
+.light,
+.dark {
+  transition: 0.7s background ease;
   background: linear-gradient(
     0deg,
     #98c3e8 8.84%,
@@ -125,8 +125,7 @@ $sizeColumn: (auto clamp(70%, 940px, 75%) auto);
     }
   }
 }
-.dark{
- 
+.dark {
   background: linear-gradient(
     0deg,
     var(--color_lightOr) 8.84%,
@@ -163,7 +162,8 @@ $sizeColumn: (auto clamp(70%, 940px, 75%) auto);
   }
 }
 @media (max-width: 768px) {
-  .light, .dark{
+  .light,
+  .dark {
     position: relative;
     padding: 10px;
     grid-template-columns: 95vw;

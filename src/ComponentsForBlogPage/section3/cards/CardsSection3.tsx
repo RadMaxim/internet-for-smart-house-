@@ -1,20 +1,20 @@
 import { memo } from "react";
-import { CardsSection3I } from "../../../InterfaceAll/Interface";
 import Paragraph from "../../../Paragraph/Paragraph";
 import Share from "../../../Share/Share";
 import classCardsSection3 from "./css/classCardsSection3.module.css";
+import { ImageHit } from "../../../Layout/ThemeContext/ThemeContext";
 
-const CardsSection3 = memo(({ img, header, desc }: CardsSection3I) => {
+const CardsSection3 = memo(({webformatURL,tags  }: ImageHit ) => {
   return (
     <li className={classCardsSection3.li}>
       <div className={classCardsSection3.img}>
-        <img src={img} alt="" />
+        <img src={webformatURL} alt="" />
       </div>
       <div className={classCardsSection3.head}>
-        <h3>{header}</h3>
+        <h3>{tags}</h3>
       </div>
       <div className={classCardsSection3.desc}>
-        <Paragraph color={2}>{desc}</Paragraph>
+        <Paragraph color={2}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus quisque magna in nisl nibh bibendum ipsum, elit duis. Donec.</Paragraph>
       </div>
       <div className={classCardsSection3.wait}>
         <Share />

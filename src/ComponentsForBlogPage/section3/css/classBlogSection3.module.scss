@@ -10,7 +10,6 @@ $sizeColumn: (auto 940px auto);
     grid-area: content;
     margin-bottom: 50px;
     margin-top: -50px;
-    
   }
 }
 .ul {
@@ -19,27 +18,25 @@ $sizeColumn: (auto 940px auto);
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  
+  overflow-y: scroll;
+  height: 100%;
 }
-@media (max-width: 768px){
-
-  $sizeColumn:  95vw ;
+@media (max-width: 768px) {
+  $sizeColumn: 95vw;
   .section3 {
     grid-template-columns: $sizeColumn;
     grid-template-areas: "content";
     justify-content: center;
     margin: 0;
-    .section3_container{
-     margin-top: 56px;
+    .section3_container {
+      margin-top: 56px;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
     }
-    .ul{
+    .ul {
       overflow-y: scroll;
+      height: 100%;
     }
-   
   }
-  
-
 }

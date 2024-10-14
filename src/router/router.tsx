@@ -19,7 +19,7 @@ const routers = [
     errorElement: <div>"ErrorOfMain"</div>,
   },
   {
-    path: "/blogpage",
+    path: "/blogpage/:page?",
     element: (
       <HelperLoaderLayoutComponent>
         <BlogPages />

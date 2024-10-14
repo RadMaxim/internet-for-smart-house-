@@ -1,14 +1,18 @@
 import { memo } from "react";
 import Heading from "../../Heading/Heading";
 import CardsSection3 from "./cards/CardsSection3";
-import { cards } from "./cardsSection3";
+
 import classBlogSection3 from "./css/classBlogSection3.module.css";
 import Paginator from "./Paginator/Paginator";
 import PaginatorsHooks from "../../MyHooks/PaginatorHooks";
+import useHookQuery from "../../MyHooks/QueryHooks";
+import { ImageHit } from "../../Layout/ThemeContext/ThemeContext";
 
 const BlogSection3 = memo(() => {
   const { num } = PaginatorsHooks();
-
+  const {data} = useHookQuery({page:Number(num)})
+  console.log(data);
+  
   return (
     <>
       <section className={classBlogSection3.section3}>
@@ -19,8 +23,8 @@ const BlogSection3 = memo(() => {
             </Heading>
           </div>
           <ul className={classBlogSection3.ul}>
-            {cards[num].map((elem, index) => (
-              <CardsSection3 key={index} {...elem} />
+            {data&&data.map((elem:ImageHit) => (
+              <CardsSection3 key={elem.id} {...elem} />
             ))}
           </ul>
           <Paginator />

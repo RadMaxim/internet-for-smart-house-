@@ -1,10 +1,10 @@
-@mixin posElem(){
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+@mixin posElem() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.paginator{
-    margin-top: 30px;
-    padding: 0 10px;
-    @include posElem();
+.paginator {
+  margin-top: 30px;
+  padding: 0 10px;
+  @include posElem();
 }

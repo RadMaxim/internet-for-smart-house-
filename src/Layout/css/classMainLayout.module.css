@@ -1,9 +1,9 @@
 :root {
-  --color_lightOr:#FBE8A6;
-  --color_darkOr:#F4976C;
-  --color_darkBl:#303C6C;
-  --color_lightBl1:#B4DFE5;
-  --color_lightBl2:#D2FDFF;
+  --color_lightOr: #fbe8a6;
+  --color_darkOr: #f4976c;
+  --color_darkBl: #303c6c;
+  --color_lightBl1: #b4dfe5;
+  --color_lightBl2: #d2fdff;
 }
 
 .light {

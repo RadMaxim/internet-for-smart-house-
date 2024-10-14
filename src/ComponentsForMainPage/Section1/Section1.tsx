@@ -17,7 +17,7 @@ import {
 import useTheme from "../../MyHooks/ThemeHooks";
 
 const Section1 = memo(() => {
-  const {theme} = useTheme();
+  const { theme } = useTheme();
   return (
     <>
       <section className={classSection1[theme]}>

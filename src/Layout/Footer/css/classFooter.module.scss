@@ -11,7 +11,8 @@ footer {
   bottom: 0;
   width: 100%;
   height: 869px;
-  .light, .dark {
+  .light,
+  .dark {
     height: 100%;
     background-color: $blue_02;
     border-radius: 0px 200px 0px 0px;
@@ -86,8 +87,8 @@ footer {
       }
     }
   }
-  .dark{
-    background-color: var(--color_darkBl)
+  .dark {
+    background-color: var(--color_darkBl);
   }
 }
 .cont1 {
@@ -106,7 +107,8 @@ footer {
     display: none;
   }
   footer {
-    .light, .dark {
+    .light,
+    .dark {
       padding: 10px;
       border-radius: 0px 50px 0px 0px;
       grid-template-rows: 300px 700px;

@@ -7,7 +7,7 @@ import classFooter from "./css/classFooter.module.css";
 import useTheme from "../../MyHooks/ThemeHooks";
 
 const Footer = memo(() => {
-  const {theme} = useTheme()
+  const { theme } = useTheme();
   return (
     <>
       <footer>

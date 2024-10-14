@@ -1,1 +1,1 @@
-{"version":3,"sources":["classBlogSection1.module.scss","classBlogSection1.module.css"],"names":[],"mappings":"AACE;EACE,iBAAA;EACA,qBAAA;EACA,oEAAA;EACA,aAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;ACAJ;ADCI;EACE,YAAA;EACA,aAAA;ACCN;;ADIE;EAEE,uFAAA;ACFJ","file":"classBlogSection1.module.css"}
+{"version":3,"sources":["classBlogSection1.module.scss","classBlogSection1.module.css"],"names":[],"mappings":"AAEE;;EACE,iBAAA;EACA,qBAAA;EACA,oEAAA;EACA,aAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;ACAJ;ADCI;;EACE,YAAA;EACA,aAAA;ACEN;;ADGE;EACE,uFAAA;ACAJ","file":"classBlogSection1.module.css"}

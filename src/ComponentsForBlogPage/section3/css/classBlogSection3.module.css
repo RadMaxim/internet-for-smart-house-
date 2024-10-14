@@ -19,6 +19,8 @@
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
+  overflow-y: scroll;
+  height: 100%;
 }
 
 @media (max-width: 768px) {
@@ -36,5 +38,6 @@
   }
   .section3 .ul {
     overflow-y: scroll;
+    height: 100%;
   }
 }/*# sourceMappingURL=classBlogSection3.module.css.map */

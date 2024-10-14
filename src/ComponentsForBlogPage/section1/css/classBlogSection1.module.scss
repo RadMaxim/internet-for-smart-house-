@@ -1,4 +1,5 @@
-.light, .dark {
+.light,
+.dark {
   .section1_container {
     margin-top: 130px;
     transition: 0.7s ease;
@@ -13,12 +14,12 @@
     }
   }
 }
-.dark{
+.dark {
   .section1_container {
-    
-    background: linear-gradient(253.6deg, var(--color_lightBl1) 2.46%, var(--color_darkOr));
-   
+    background: linear-gradient(
+      253.6deg,
+      var(--color_lightBl1) 2.46%,
+      var(--color_darkOr)
+    );
   }
-
-
 }

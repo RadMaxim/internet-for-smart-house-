@@ -15,6 +15,7 @@ import {
   img12,
 } from "./getImgs";
 import useTheme from "../../MyHooks/ThemeHooks";
+import IMGLoadingLazy from "../../IMGLoadingLazy/IMGLoadingLazy";
 
 const Section1 = memo(() => {
   const { theme } = useTheme();
@@ -50,15 +51,20 @@ const Section1 = memo(() => {
                 </div>
               </div>
               <div className={classSection1.bottom_imgs}>
-                <div>
-                  <img id="img2" src={img3} alt="" />
-                </div>
-                <div>
-                  <img id="man" src={img4} alt="" />
-                </div>
-                <div>
-                  <img id="woman" src={img5} alt="" />
-                </div>
+                <IMGLoadingLazy>
+                <img id="img2" src={img3} alt="" />
+                
+                </IMGLoadingLazy>
+                <IMGLoadingLazy>
+                <img id="man" src={img4} alt="" />
+
+                </IMGLoadingLazy>
+               
+              <IMGLoadingLazy>
+              <img id="woman" src={img5} alt="" />
+
+              </IMGLoadingLazy>
+              
               </div>
             </div>
           </div>

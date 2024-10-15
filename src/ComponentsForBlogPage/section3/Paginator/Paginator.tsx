@@ -5,14 +5,11 @@ import PaginatorsHooks from "../../../MyHooks/PaginatorHooks";
 
 const Paginator = React.memo(() => {
   const { setNum } = PaginatorsHooks();
-  
+
   const handlePageChange = useCallback(
     (direction: number) => {
       setNum((num) => {
-        if (
-          (direction == -1 && num == 0) ||
-          (direction == 1 && num == 499)
-        ) {
+        if ((direction == -1 && num == 0) || (direction == 1 && num == 499)) {
           return num;
         }
 
@@ -24,7 +21,7 @@ const Paginator = React.memo(() => {
 
   return (
     <>
-      <div className={classPaginator.paginator}>
+      <div  className={classPaginator.paginator}>
         <TextAnd_Icon IMG="arrowLeft" place="left">
           <span onClick={() => handlePageChange(-1)}>New Post</span>
         </TextAnd_Icon>

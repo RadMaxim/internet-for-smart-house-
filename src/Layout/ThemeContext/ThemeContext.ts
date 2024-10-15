@@ -5,6 +5,7 @@ export interface Theme {
   setTheme: React.Dispatch<React.SetStateAction<"dark" | "light">>;
 }
 export interface ImageHit {
+  index?:number,
   id?: number;
   pageURL?: string;
   type?: string;

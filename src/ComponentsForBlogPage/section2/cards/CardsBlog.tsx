@@ -3,14 +3,16 @@ import { CardsBlogI } from "../../../InterfaceAll/Interface";
 import Share from "../../../Share/Share";
 import Heading from "../../../Heading/Heading";
 import Paragraph from "../../../Paragraph/Paragraph";
+import IMGLoadingLazy from "../../../IMGLoadingLazy/IMGLoadingLazy";
 
 const CardsBlog = ({ title, desc, img_test }: CardsBlogI) => {
   return (
     <>
       <section className={classCardsBlog.section}>
-        <div>
-          <img src={img_test} alt="" />
-        </div>
+        <IMGLoadingLazy>
+        <img src={img_test} alt="" />
+        
+        </IMGLoadingLazy>
 
         <Heading lvl={3} color={2} size={"1.5rem"}>
           {title}{" "}

@@ -1,4 +1,4 @@
-import { memo } from "react";
+import { memo, useEffect, useState } from "react";
 import Heading from "../../Heading/Heading";
 import CardsSection3 from "./cards/CardsSection3";
 
@@ -10,9 +10,21 @@ import { ImageHit } from "../../Layout/ThemeContext/ThemeContext";
 
 const BlogSection3 = memo(() => {
   const { num } = PaginatorsHooks();
-  const {data} = useHookQuery({page:Number(num)})
-  console.log(data);
+  const [img, setIMG] = useState<ImageHit[]>([])
+  const { data } = useHookQuery({ page: Number(num) });
+ 
+  useEffect(()=>{
+    if (data) {
+      setIMG(data)
+    }
+    else{
+      setIMG([])
+    }
+     
+  },[data])
   
+ 
+
   return (
     <>
       <section className={classBlogSection3.section3}>
@@ -22,12 +34,13 @@ const BlogSection3 = memo(() => {
               ALL ARTICLE
             </Heading>
           </div>
-          <ul className={classBlogSection3.ul}>
-            {data&&data.map((elem:ImageHit) => (
-              <CardsSection3 key={elem.id} {...elem} />
-            ))}
+          <ul  className={classBlogSection3.ul}>
+            {
+              img.map((elem: ImageHit) => (
+                <CardsSection3 key={elem.id} {...elem} />
+              ))}
           </ul>
-          <Paginator />
+          <Paginator  />
         </div>
       </section>
     </>

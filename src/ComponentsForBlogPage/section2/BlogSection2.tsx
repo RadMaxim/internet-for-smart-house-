@@ -8,11 +8,12 @@ import Share from "../../Share/Share";
 import { memo } from "react";
 import FormForArticle from "./FormForArticle/FormForArticle";
 import SearchIMG from "../../MyHooks/SearchIMG";
+import IMGLoadingLazy from "../../IMGLoadingLazy/IMGLoadingLazy";
 
 const BlogSection2 = memo(() => {
   const { array_img } = SearchIMG();
   const slice_array_img = array_img?.slice(0, 4);
-
+  
   return (
     <>
       <section className={classBlogSection2.section2}>
@@ -40,10 +41,10 @@ const BlogSection2 = memo(() => {
               <Share />
             </section>
             <section className={classBlogSection2.section_4}>
-              <img
+               <IMGLoadingLazy><img
                 src={slice_array_img && slice_array_img[0].largeImageURL}
                 alt=""
-              />
+              /></IMGLoadingLazy>
             </section>
           </div>
           <div className={classBlogSection2.section2_container_bottom}></div>

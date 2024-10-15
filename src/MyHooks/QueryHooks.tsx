@@ -1,14 +1,17 @@
-import { useQuery} from "react-query";
+import { useQuery } from "react-query";
 import { ImageHit } from "../Layout/ThemeContext/ThemeContext";
 import React from "react";
 export interface UseHookQueryParams {
-    state?: string;
-    page?: number;
-    set_array_img?: React.Dispatch<React.SetStateAction<ImageHit[] | null>>;
-  }
-const receiveData = async (search?: string,page?:number): Promise<ImageHit[] | null> => {
+  state?: string;
+  page?: number;
+  set_array_img?: React.Dispatch<React.SetStateAction<ImageHit[] | null>>;
+}
+const receiveData = async (
+  search?: string,
+  page?: number,
+): Promise<ImageHit[] | null> => {
   const step1 = await fetch(
-    `https://pixabay.com/api/?key=43093131-6aaad8110d954fdeab2747c5d&category=${search}&page=${page?page:1}`,
+    `https://pixabay.com/api/?key=43093131-6aaad8110d954fdeab2747c5d&category=${search}&page=${page ? page : 1}`,
   );
   if (!step1.ok) {
     return null;
@@ -17,16 +20,8 @@ const receiveData = async (search?: string,page?:number): Promise<ImageHit[] | n
 
   return step2?.hits;
 };
-const useHookQuery = ({state,page,set_array_img}:UseHookQueryParams
-
- 
-) => {
-    // const queryClient = useQueryClient();
-    // useEffect(() => {
-    //     queryClient.invalidateQueries(["array_img", state,page]);
-    //   }, [state, queryClient,page]);
-    
-  return useQuery(["array_img", state,page], () => receiveData(state,page), {
+const useHookQuery = ({ state, page, set_array_img }: UseHookQueryParams) => {
+  return useQuery(["array_img", state, page], () => receiveData(state, page), {
     onSuccess: (data) => {
       if (!set_array_img) {
         return;
@@ -46,7 +41,6 @@ const useHookQuery = ({state,page,set_array_img}:UseHookQueryParams
     cacheTime: 60000,
     refetchOnWindowFocus: false,
     retry: 2,
-  
   });
 };
 export default useHookQuery;

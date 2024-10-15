@@ -1,5 +1,5 @@
 import Heading from "../../Heading/Heading";
-import IMG from "../../IMG/IMG";
+import IMGLoadingLazy from "../../IMGLoadingLazy/IMGLoadingLazy";
 import Paragraph from "../../Paragraph/Paragraph";
 import TextAnd_Icon from "../../TextAnd_Icon/TextAnd_Icon";
 import { imgMain } from "./contact";
@@ -12,7 +12,10 @@ const ContactsUs2 = () => {
       <section className={classContactsUs2.section2}>
         <div className={classContactsUs2.section2_container}>
           <address>
-            <IMG src={imgMain} />
+            <IMGLoadingLazy>
+            <img src={imgMain} alt="" />
+            
+            </IMGLoadingLazy>
 
             <div>
               <Heading size={"1.25rem"} color={2} lvl={3}>

@@ -13,7 +13,10 @@ export interface BlogSection2 {
 const FormForArticle = () => {
   const { set_array_img } = SearchIMG();
   const [state, setState] = useState<string>("education");
-  const { isFetched } = useHookQuery({state:state,set_array_img:set_array_img});
+  const { isFetched } = useHookQuery({
+    state: state,
+    set_array_img: set_array_img,
+  });
   const { register, handleSubmit } = useForm<BlogSection2>();
   const handle: SubmitHandler<BlogSection2> = (info) => {
     setState(info.search);

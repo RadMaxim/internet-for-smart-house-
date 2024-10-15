@@ -1,4 +1,5 @@
 import Heading from "../../../Heading/Heading";
+import IMGLoadingLazy from "../../../IMGLoadingLazy/IMGLoadingLazy";
 import { CardSection2I } from "../../../InterfaceAll/Interface";
 import Paragraph from "../../../Paragraph/Paragraph";
 import TextAnd_Icon from "../../../TextAnd_Icon/TextAnd_Icon";
@@ -9,9 +10,9 @@ const CardSection2 = ({ h3, IMG, desc }: CardSection2I) => {
     <>
       <section className={classCardSection2.card1}>
         <div className={classCardSection2.card1_container}>
-          <div className={classCardSection2.img}>
-            <img src={IMG} alt="" />
-          </div>
+          <IMGLoadingLazy>
+          <img src={IMG} alt="" />
+          </IMGLoadingLazy>
           <Heading lvl={3} color={2} size={"1.25rem"}>
             {h3}
           </Heading>
